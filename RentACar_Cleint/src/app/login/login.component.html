@@ -1,0 +1,57 @@
+<div class="form-container">
+    <div class="form-card">
+      <h2>Login</h2>
+      <form #form="ngForm" (ngSubmit)="login(form)">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+            ngModel
+            #username="ngModel"
+            [class.input-error]="username.touched && username.invalid"
+          />
+          <div *ngIf="username.touched && username.invalid" class="error">
+            <small *ngIf="username.errors?.['required']">Username is required.</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+            minlength="5"
+            ngModel
+            #password="ngModel"
+            [class.input-error]="password.touched && password.invalid"
+          />
+          <div *ngIf="password.touched && password.invalid" class="error">
+            <small *ngIf="password.errors?.['required']">Password is required.</small>
+            <small *ngIf="password.errors?.['minlength']">
+              Password must be at least 5 characters long.
+            </small>
+          </div>
+        </div>
+        <button
+          type="submit"
+          [disabled]="form.invalid"
+          [style.backgroundColor]="form.invalid ? 'grey' : 'rgb(244, 106, 129)'"
+          class="form-button"
+        >
+          Login
+        </button>
+      </form>
+
+      <p class="register-redirect">
+        Don’t have an account? 
+        <a routerLink="/register/renter" class="register-link">Register</a>
+      </p>
+    </div>
+  </div>
+  

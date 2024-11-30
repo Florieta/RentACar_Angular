@@ -1,0 +1,109 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+  
+  .form-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .form-group input.input-error {
+    border-color: red;
+  }
+  
+  .form-group input:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(244, 106, 129);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #fa9999;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .register-redirect {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .register-redirect .register-link {
+    color: rgb(244, 106, 129);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-redirect .register-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 480px) {
+    .form-card {
+      padding: 20px;
+    }
+  
+    .form-card h2 {
+      font-size: 20px;
+    }
+  
+    .form-group label,
+    .form-group input {
+      font-size: 13px;
+    }
+  }
+  

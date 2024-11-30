@@ -1,0 +1,28 @@
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-title">
+        <a routerLink="/" class="navbar-title-link">Rent A Car</a>
+      </div>
+      <ul class="navbar-links">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/catalog">Catalog</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle">Register</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a routerLink="/register/dealer"
+                >Register as Dealer</a
+              >
+            </li>
+            <li>
+              <a routerLink="/register/renter"
+                >Register as Renter</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a routerLink="/my-profile">My Profile</a></li>
+      </ul>
+    </div>
+  </nav>

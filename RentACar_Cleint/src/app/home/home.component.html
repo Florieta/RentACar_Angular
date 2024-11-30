@@ -1,0 +1,44 @@
+<section class="home-layout">
+  <div class="background-image" appBackgroundImage="'/assets/cars/1111.jpg'"></div>
+    <div class="content">
+      <h1>Upgrade your Travel</h1>
+      <p>Enjoy secret offers up to -70% off the best cars every Sunday.</p>
+      <button class="register-button" (click)="onRegister()">Register</button>
+      <p class="subtext">Discover the experience</p>
+    </div>
+  </section>
+  
+  <!-- <section class="product-categories">
+    <h2>For all tastes and all desires</h2>
+    <div class="categories-container">
+      <div class="category" *ngFor="let image of images" (click)="navigateToCatalog()">
+        <div
+          class="category-image"
+          [style.backgroundImage]="'url(' + image.url + ')'"
+        ></div>
+        <div class="category-backdrop"></div>
+        <h3>{{ image.title }}</h3>
+      </div>
+    </div>
+  </section> -->
+  
+  <section class="product-values">
+    <h2>How it Works</h2>
+    <div class="values-container">
+      <div class="value-item">
+        <img src="/assets/book.png" alt="Book" />
+        <h3>1. Make a free reservation</h3>
+        <p>No money in advance.</p>
+      </div>
+      <div class="value-item">
+        <img src="/assets/attention.png" alt="Attention" />
+        <h3>2. First come, first served</h3>
+        <p>Be quick, our offers are limited.</p>
+      </div>
+      <div class="value-item">
+        <img src="/assets/offers.png" alt="Offers" />
+        <h3>3. New offers every week</h3>
+        <p>Your Sundays will no longer be alike.</p>
+      </div>
+    </div>
+  </section>

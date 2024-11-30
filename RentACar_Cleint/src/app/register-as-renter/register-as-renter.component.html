@@ -1,0 +1,179 @@
+<div class="form-container">
+    <div class="form-card">
+      <h2>Register as Renter</h2>
+      <form #renterForm="ngForm" (ngSubmit)="onSubmit(renterForm)">
+        <div class="form-group">
+          <label for="userName">Username</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Enter your username"
+            [(ngModel)]="formData.userName"
+            #userName="ngModel"
+            required
+            minlength="2"
+            maxlength="20"
+          />
+          <small *ngIf="userName.invalid && userName.touched" style="color: red">
+            Username is required (2-20 characters).
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            [(ngModel)]="formData.password"
+            #password="ngModel"
+            required
+            minlength="6"
+          />
+          <small *ngIf="password.invalid && password.touched" style="color: red">
+            Password must be at least 6 characters long.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            [(ngModel)]="formData.email"
+            #email="ngModel"
+            required
+          />
+          <small *ngIf="email.invalid && email.touched" style="color: red">
+            Valid email is required.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter your first name"
+            [(ngModel)]="formData.firstName"
+            #firstName="ngModel"
+            required
+            minlength="2"
+            maxlength="20"
+          />
+          <small *ngIf="firstName.invalid && firstName.touched" style="color: red">
+            First name is required (2-20 characters).
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter your last name"
+            [(ngModel)]="formData.lastName"
+            #lastName="ngModel"
+            required
+            minlength="2"
+            maxlength="20"
+          />
+          <small *ngIf="lastName.invalid && lastName.touched" style="color: red">
+            Last name is required (2-20 characters).
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="Enter your phone number"
+            [(ngModel)]="formData.phoneNumber"
+            #phoneNumber="ngModel"
+            required
+            minlength="5"
+            maxlength="15"
+          />
+          <small *ngIf="phoneNumber.invalid && phoneNumber.touched" style="color: red">
+            Phone number should be between 5 and 15 characters.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+            [(ngModel)]="formData.age"
+            #age="ngModel"
+            required
+            min="18"
+            max="99"
+          />
+          <small *ngIf="age.invalid && age.touched" style="color: red">
+            Age must be between 18 and 99.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="drivingLicenceNumber">Driving License Number</label>
+          <input
+            type="text"
+            id="drivingLicenceNumber"
+            name="drivingLicenceNumber"
+            placeholder="Enter your driving license number"
+            [(ngModel)]="formData.drivingLicenceNumber"
+            #drivingLicenceNumber="ngModel"
+            required
+          />
+          <small *ngIf="drivingLicenceNumber.invalid && drivingLicenceNumber.touched" style="color: red">
+            Driving license number is required.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="expiredDate">License Expired Date</label>
+          <input
+            type="date"
+            id="expiredDate"
+            name="expiredDate"
+            placeholder="Enter your license expiry date"
+            [(ngModel)]="formData.expiredDate"
+            #expiredDate="ngModel"
+            required
+          />
+          <small *ngIf="expiredDate.invalid && expiredDate.touched" style="color: red">
+            Expired date is required.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+            [(ngModel)]="formData.address"
+            #address="ngModel"
+            required
+            minlength="10"
+            maxlength="75"
+          />
+          <small *ngIf="address.invalid && address.touched" style="color: red">
+            Address should be between 10 and 75 characters.
+          </small>
+        </div>
+  
+        <button type="submit" class="form-button" [disabled]="renterForm.invalid">
+          Register
+        </button>
+      </form>
+      <p class="login-redirect">
+        Already have an account? 
+        <a routerLink="/login" class="login-link">Login</a>
+      </p>
+    </div>
+  </div>
+  
