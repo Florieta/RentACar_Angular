@@ -1,9 +1,12 @@
 export interface User {
     id: string;
-    userName: string;
-    email: string;
-    roles?: string[];
     token: string;
     expiration: string;
+    user: {
+      renterId: number | null;  
+      dealerId: number | null;  
+      firstName: string;
+      lastName: string;
+    }
   }
   

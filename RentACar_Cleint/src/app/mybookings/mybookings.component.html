@@ -1,0 +1,31 @@
+<div *ngIf="isLoading">Loading bookings...</div>
+<div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+<table *ngIf="!isLoading && bookings.length > 0">
+  <thead>
+    <tr>
+      <th>Car Make & Model</th>
+      <th>Reg Number</th>
+      <th>Pick Up Date & Time</th>
+      <th>Drop Off Date & Time</th>
+      <th>Duration</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookings">
+      <td>{{ booking.carMake }} {{ booking.carModel }}</td>
+      <td>{{ booking.regNumber }}</td>
+      <td>{{ booking.pickUpDateAndTime }}</td>
+      <td>{{ booking.dropOffDateAndTime }}</td>
+      <td>{{ booking.duration }}</td>
+      <!-- <td>
+        <button *ngIf="booking.isActive" (click)="cancelBooking(booking.id)">Cancel</button>
+      </td> -->
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="!isLoading && bookings.length === 0">
+  You have no bookings at the moment.
+</div>

@@ -1,0 +1,87 @@
+.container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #c0392b;
+  }
+  
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .no-bookings {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-top: 20px;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  
+    button {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }
+  
