@@ -1,0 +1,50 @@
+<div class="profile-container">
+  @if(dealerProfile){
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="avatar">{{ (dealerProfile.firstName.charAt(0) || '') + (dealerProfile.lastName.charAt(0) || '') }}</div>
+        <div class="header-info">
+          <h2>{{ dealerProfile.firstName }} {{dealerProfile.lastName}}</h2>
+          <p>{{ dealerProfile.email }}</p>
+        </div>
+        <button class="more-btn" (click)="navigateToProfile()">⋮</button>
+      </div>
+  
+      <div class="profile-image">
+        <img src="assets/profile_image.jpg" alt="Profile Picture" />
+      </div>
+  
+      <div class="profile-details">
+        <p><strong>Username:</strong> {{ dealerProfile.userName }}</p>
+        <p><strong>Phone Number:</strong> {{ dealerProfile.phoneNumber }}</p>
+        <p><strong>Company Name:</strong> {{ dealerProfile.companyName }}</p>
+        <p><strong>Company Number:</strong> {{ dealerProfile.companyNumber }}</p>
+        <p><strong>Registered As:</strong>Dealer</p>
+      </div>
+    </div>}
+    @if(renterProfile){
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="avatar">{{ (renterProfile.firstName) }}</div>
+          <div class="header-info">
+            <h2>{{ renterProfile.firstName }} {{renterProfile.lastName}}</h2>
+            <p>{{ renterProfile.email }}</p>
+          </div>
+          <button class="more-btn" (click)="navigateToProfile()">⋮</button>
+        </div>
+    
+        <div class="profile-image">
+          <img src="assets/profile_image.jpg" alt="Profile Picture" />
+        </div>
+    
+        <div class="profile-details">
+          <p><strong>Username:</strong> {{ renterProfile.userName }}</p>
+          <p><strong>Phone Number:</strong> {{ renterProfile.phoneNumber }}</p>
+          <p><strong>Driving Licence Number:</strong> {{ renterProfile.drivingLicenceNumber }}</p>
+          <p><strong>Expired Date:</strong> {{ renterProfile.expiredDate }}</p>
+          <p><strong>Registered As:</strong>Renter</p>
+        </div>
+      </div>
+    }
+  </div>
+  

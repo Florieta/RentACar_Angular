@@ -7,16 +7,16 @@
           <input
             type="text"
             id="username"
-            name="username"
+            name="userName"
             placeholder="Enter your username"
             required
             ngModel
-            #username="ngModel"
-            [class.input-error]="username.touched && username.invalid"
+            #userName="ngModel"
+            [class.input-error]="userName.touched && userName.invalid"
           />
-          <div *ngIf="username.touched && username.invalid" class="error">
+          <!-- <div *ngIf="username.touched && username.invalid" class="error">
             <small *ngIf="username.errors?.['required']">Username is required.</small>
-          </div>
+          </div> -->
         </div>
         <div class="form-group">
           <label for="password">Password</label>
@@ -31,12 +31,12 @@
             #password="ngModel"
             [class.input-error]="password.touched && password.invalid"
           />
-          <div *ngIf="password.touched && password.invalid" class="error">
+          <!-- <div *ngIf="password.touched && password.invalid" class="error">
             <small *ngIf="password.errors?.['required']">Password is required.</small>
             <small *ngIf="password.errors?.['minlength']">
-              Password must be at least 5 characters long.
+              Password must be at least 8 characters long.
             </small>
-          </div>
+          </div> -->
         </div>
         <button
           type="submit"

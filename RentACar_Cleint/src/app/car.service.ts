@@ -15,4 +15,8 @@ export class CarService {
   getAllCars(): Observable<Car[]> {
     return this.http.get<Car[]>(this.apiUrl);
   }
+
+  getCarById(id: number): Observable<Car> {
+    return this.http.get<Car>(`https://localhost:7016/api/Car/${id}`);
+  }
 }

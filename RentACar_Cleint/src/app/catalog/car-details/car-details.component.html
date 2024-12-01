@@ -1,0 +1,37 @@
+<div class="car-detail-container">
+    <div class="car-detail-header">
+      <h2>{{ car?.make }} {{ car?.model }} ({{ car?.makeYear }})</h2>
+      <p>{{ car?.dailyRate }}€ per day</p>
+    </div>
+  
+    <div class="car-detail-body">
+      <img [src]="" alt="Car Image" class="car-detail-image" />
+  
+      <div class="car-info">
+        <p><strong>Category:</strong> {{ car?.categoryName }}</p>
+        <p><strong>Doors:</strong> {{ car?.doors }} | <strong>Seats:</strong> {{ car?.seats }}</p>
+        <p><strong>Fuel:</strong> {{ car?.fuel }} | <strong>Transmission:</strong> {{ car?.transmission }}</p>
+        <p><strong>A/C:</strong> {{ car?.airCondition ? 'Yes' : 'No' }}</p>
+        <p><strong>Navigation:</strong> {{ car?.navigationSystem ? 'Yes' : 'No' }}</p>
+        <p><strong>Registration:</strong> {{ car?.regNumber }}</p>
+      </div>
+    </div>
+  
+    <div class="car-detail-actions">
+      <ng-container *ngIf="user?.token">
+        <ng-container *ngIf="user?.renterId">
+          <button class="book-button" [routerLink]="['/booking', car?.id]">
+            Book Now
+          </button>
+        </ng-container>
+      </ng-container>
+  
+      <ng-container *ngIf="!user?.token">
+        <p>You need to login to book this car!</p>
+        <button class="login-button" [routerLink]="'/login'">
+          Login
+        </button>
+      </ng-container>
+    </div>
+  </div>
+  
