@@ -1,6 +1,6 @@
 import { Injectable, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Subscription, tap } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { BehaviorSubject, catchError, Subscription, tap } from 'rxjs';
 import { User } from '../types/user';
 import { isPlatformBrowser } from '@angular/common';
 import { DealerRegistrationRequest } from '../types/dealer-registration-request';
@@ -99,8 +99,16 @@ export class UserService implements OnDestroy {
 
   logout() {
     const token = localStorage.getItem(this.TOKEN_KEY);
+  
+    if (!token) {
+      console.error('No token found in localStorage');
+      return this.http.get('https://localhost:7016/api/Authentication/logout');
+    }
+  
+    const headers = new HttpHeaders().set('Token', token);
+
     return this.http
-      .get('https://localhost:7016/api/Authentication/logout', { headers: { Authorization: `Bearer ${token}` } })
+      .get('https://localhost:7016/api/Authentication/logout', { headers })
       .pipe(
         tap(() => {
           this.user$$.next(null);
@@ -108,10 +116,14 @@ export class UserService implements OnDestroy {
             localStorage.removeItem(this.USER_KEY);
             localStorage.removeItem(this.TOKEN_KEY);
           }
+        }),
+        catchError(error => {
+          console.error('Logout failed', error);
+          throw error;
         })
       );
   }
-
+  
   ngOnDestroy(): void {
     this.userSubscription?.unsubscribe();
   }
