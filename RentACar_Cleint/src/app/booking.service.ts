@@ -12,7 +12,7 @@ export class BookingService {
 
   constructor(private http: HttpClient) {}
 
-  getBookingsByRenterId(renterId: string): Observable<Booking[]> {
+  getBookingsByRenterId(renterId: number): Observable<Booking[]> {
     return this.http.get<Booking[]>(`${this.apiUrl}/Renter/${renterId}`);
   }
 
