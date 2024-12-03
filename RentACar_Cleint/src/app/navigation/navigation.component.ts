@@ -26,6 +26,7 @@ export class NavigationComponent {
           this.isDealer = true
         }else{
           this.isRenter = true;
+          console.log(this.isRenter)
         }
       }
     }

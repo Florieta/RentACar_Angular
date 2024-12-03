@@ -1,0 +1,124 @@
+<div class="booking-container">
+  <h2>Book a Car</h2>
+
+  <form (ngSubmit)="submitBooking(bookingForm)" #bookingForm="ngForm">
+
+    <div class="form-group">
+      <label for="pickUpDateAndTime">Pick up date and time</label>
+      <input
+        type="datetime-local"
+        id="pickUpDateAndTime"
+        name="pickUpDateAndTime"
+        class="form-control"
+        [(ngModel)]="formValues.pickUpDateAndTime"
+        required
+        #pickUpDate="ngModel"
+      />
+      <div *ngIf="pickUpDate.invalid && pickUpDate.touched" class="error-message">
+        Pick-up date and time is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dropOffDateAndTime">Drop off date and time</label>
+      <input
+        type="datetime-local"
+        id="dropOffDateAndTime"
+        name="dropOffDateAndTime"
+        class="form-control"
+        [(ngModel)]="formValues.dropOffDateAndTime"
+        required
+        #dropOffDate="ngModel"
+      />
+      <div *ngIf="dropOffDate.invalid && dropOffDate.touched" class="error-message">
+        Drop-off date and time is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="duration">Duration (days)</label>
+      <input
+        type="number"
+        id="duration"
+        name="duration"
+        class="form-control"
+        [(ngModel)]="formValues.duration"
+        (ngModelChange)="updateTotalAmount()"
+        required
+        #duration="ngModel"
+        min="1"
+      />
+      <div *ngIf="duration.invalid && duration.touched" class="error-message">
+        Duration must be greater than 0.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="totalAmount">Total Amount (€)</label>
+      <input
+        type="text"
+        id="totalAmount"
+        name="totalAmount"
+        class="form-control"
+        [(ngModel)]="formValues.totalAmount"
+        disabled
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="paymentType">Payment Type</label>
+      <select
+        id="paymentType"
+        name="paymentType"
+        class="form-control"
+        [(ngModel)]="formValues.paymentType"
+        required
+      >
+        <option value="card">Card</option>
+        <option value="cash">Cash</option>
+        <option value="bankTransfer">Bank Transfer</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pickUpLocation">Pick-up Location</label>
+      <select
+        id="pickUpLocation"
+        name="pickUpLocationId"
+        class="form-control"
+        [(ngModel)]="formValues.pickUpLocationId"
+        required
+      >
+        <option *ngFor="let location of locations" [value]="location.id">
+          {{ location.locationName }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dropOffLocation">Drop-off Location</label>
+      <select
+        id="dropOffLocation"
+        name="dropOffLocationId"
+        class="form-control"
+        [(ngModel)]="formValues.dropOffLocationId"
+        required
+      >
+        <option *ngFor="let location of locations" [value]="location.id">
+          {{ location.locationName }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="bookingForm.invalid"
+      >
+        Submit Booking
+      </button>
+    </div>
+
+  </form>
+</div>

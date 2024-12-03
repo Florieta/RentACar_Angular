@@ -1,13 +1,14 @@
 @if(isLoading)
 {
-  <div>Loading bookings...</div>
+<div>Loading bookings...</div>
 }
 @if(errorMessage){
-  <div>{{ errorMessage }}</div>
+<div>{{ errorMessage }}</div>
 }
 
 @if(!isLoading && bookings.length > 0)
 {
+<div class="container">
   <table>
     <thead>
       <tr>
@@ -31,9 +32,10 @@
           <button *ngIf="booking.isActive" (click)="cancelBooking(booking.id)">Cancel</button>
         </td>
       </tr>
-    }
+      }
     </tbody>
   </table>
+</div>
 }
 
 @if(!isLoading && bookings.length === 0){

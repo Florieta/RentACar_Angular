@@ -25,7 +25,7 @@ export class MyBookingsComponent implements OnInit {
   ngOnInit(): void {
     this.userService.userObservable.subscribe((user) => {
       if (user) {
-        this.renterId = user.user.dealerId || this.getRenterIdFromLocalStorage();
+        this.renterId = user.user.renterId || this.getRenterIdFromLocalStorage();
         if (this.renterId) {
           this.loadBookings();
         } else {

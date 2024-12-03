@@ -20,7 +20,7 @@
     <div class="car-detail-actions">
       <ng-container *ngIf="user?.token">
         <ng-container *ngIf="user?.renterId">
-          <button class="book-button" [routerLink]="['/booking', car?.id]">
+          <button class="book-button" [routerLink]="['/booking']" [queryParams]="{ carId: car?.id, dailyRate: car?.dailyRate }">
             Book Now
           </button>
         </ng-container>
