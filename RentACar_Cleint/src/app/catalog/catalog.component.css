@@ -40,7 +40,7 @@
   padding: 1.5rem;
   background: #f8f9fa;
   border-top: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 
 .car-info h3 {
@@ -75,7 +75,7 @@
 }
 
 .view-details-btn {
-  background-color: #007bff;
+  background-color: rgb(244, 106, 129);
   color: white;
   padding: 8px 16px;
   text-decoration: none;
@@ -85,7 +85,7 @@
 }
 
 .view-details-btn:hover {
-  background-color: #0056b3;
+  background-color: #fa9999;
 }
 
 .pagination-controls {
@@ -98,14 +98,14 @@
   margin: 0 10px;
   border: none;
   border-radius: 25px;
-  background-color: #007bff;
+  background-color: #5c5d5f;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .pagination-controls button:hover {
-  background-color: #0056b3;
+  background-color: #737475;
   transform: translateY(-3px);
 }
 

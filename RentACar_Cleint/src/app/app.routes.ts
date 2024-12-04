@@ -9,6 +9,8 @@ import { AuthGuard } from './guards/auth.guard';
 import { CarDetailComponent } from './catalog/car-details/car-details.component';
 import { MyCarsComponent } from './mycars/mycars.component';
 import { MyBookingsComponent } from './mybookings/mybookings.component';
+import { BookingComponent } from './create-booking/create-booking.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -26,5 +28,8 @@ export const routes: Routes = [
     { path: 'my-profile', component: MyProfileComponent, canActivate: [AuthGuard] },
     { path: 'car/:id', component: CarDetailComponent }, 
     { path: 'my-cars', component: MyCarsComponent }, 
-    { path: 'my-bookings', component: MyBookingsComponent }
+    { path: 'my-bookings', component: MyBookingsComponent },
+    { path: 'booking', component: BookingComponent },
+    { path: '404', component: ErrorPageComponent },
+    { path: '**', redirectTo: '/404' },
 ];

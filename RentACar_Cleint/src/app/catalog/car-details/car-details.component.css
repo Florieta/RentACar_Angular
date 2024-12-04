@@ -69,9 +69,9 @@
   }
   
   .book-button:hover, .login-button:hover {
-    background-color: #2980b9;
+    background-color: #fa9999;
   }
-  
+ 
   .car-detail-actions p {
     font-size: 18px;
     color: #e74c3c;

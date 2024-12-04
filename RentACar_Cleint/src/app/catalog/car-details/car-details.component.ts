@@ -5,6 +5,7 @@ import { CarService } from '../../car.service';
 import { Subscription } from 'rxjs';
 import { UserService } from '../../user/user.service';
 import { CommonModule } from '@angular/common';
+import { User } from '../../types/user';
 
 @Component({
   selector: 'app-car-details',
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CarDetailComponent implements OnInit, OnDestroy {
   car: Car | null = null;
-  user: any;  
+  user: User | null = null;  
   userSubscription: Subscription | null = null;
 
   constructor(
@@ -25,6 +26,10 @@ export class CarDetailComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
+    this.userService.userObservable.subscribe((user) => {
+      this.user = user;
+    });
+    
     const carId = this.route.snapshot.paramMap.get('id');
     if (carId) {
       this.carService.getCarById(Number(carId)).subscribe(

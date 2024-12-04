@@ -44,17 +44,19 @@
     font-size: 12px;
   }
   
-  button {
-    margin-top: 20px;
-    padding: 12px;
-    font-size: 18px;
-    background-color: #007bff;
+  .form-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(244, 106, 129);
     color: white;
+    font-size: 16px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  button:hover {
-    background-color: #0056b3;
+  .form-button:hover {
+    background-color: #fa9999;
   }
   

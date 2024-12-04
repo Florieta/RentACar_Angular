@@ -4,6 +4,8 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CarLocation } from '../types/location';
 import { BookingService } from '../booking.service';
 import { CommonModule } from '@angular/common';
+import { UserService } from '../user/user.service';
+import { User } from '../types/user';
 
 @Component({
   selector: 'app-booking',
@@ -23,6 +25,7 @@ export class BookingComponent implements OnInit {
     dropOffLocationId: null,
     carId: 0,
     dailyRate: 0,
+    renterId: 0,
   };
   formErrors = {
     duration: ''
@@ -31,14 +34,23 @@ export class BookingComponent implements OnInit {
   isLoading = false;
   carId: number | null = null;
   dailyRate: number | null = null;
+  renterId: number | null = null;
+  user: User | null = null;
 
   constructor(
     private bookingService: BookingService,
+    private userService: UserService,
     private router: Router,
     private route: ActivatedRoute 
   ) {}
 
   ngOnInit(): void {
+    this.userService.userObservable.subscribe((user) => {
+      this.user = user;
+      if(user){
+        this.renterId = user?.user.renterId
+      }
+    });
     this.route.queryParams.subscribe(params => {
       this.carId = +params['carId']; 
       this.dailyRate = +params['dailyRate']; 
