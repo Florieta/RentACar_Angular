@@ -14,9 +14,13 @@
             #userName="ngModel"
             [class.input-error]="userName.touched && userName.invalid"
           />
-          <!-- <div *ngIf="username.touched && username.invalid" class="error">
-            <small *ngIf="username.errors?.['required']">Username is required.</small>
-          </div> -->
+          @if(userName.touched && userName.invalid){
+            <div class="error">
+              @if(userName.errors?.['required']){
+                <small>Username is required.</small>
+              }
+            </div>
+          }
         </div>
         <div class="form-group">
           <label for="password">Password</label>
@@ -31,12 +35,18 @@
             #password="ngModel"
             [class.input-error]="password.touched && password.invalid"
           />
-          <!-- <div *ngIf="password.touched && password.invalid" class="error">
-            <small *ngIf="password.errors?.['required']">Password is required.</small>
-            <small *ngIf="password.errors?.['minlength']">
-              Password must be at least 8 characters long.
-            </small>
-          </div> -->
+          @if(password.touched && password.invalid){
+          <div class="error">
+            @if(password.errors?.['required']){
+              <small>Password is required.</small>
+            }
+            @if(password.errors?.['minlength']){
+              <small>
+                Password must be at least 8 characters long.
+              </small>
+            }
+          </div>
+          }
         </div>
         <button
           type="submit"

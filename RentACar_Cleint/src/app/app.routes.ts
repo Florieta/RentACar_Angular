@@ -27,9 +27,9 @@ export const routes: Routes = [
     },
     { path: 'my-profile', component: MyProfileComponent, canActivate: [AuthGuard] },
     { path: 'car/:id', component: CarDetailComponent }, 
-    { path: 'my-cars', component: MyCarsComponent }, 
-    { path: 'my-bookings', component: MyBookingsComponent },
-    { path: 'booking', component: BookingComponent },
+    { path: 'my-cars', component: MyCarsComponent, canActivate: [AuthGuard] }, 
+    { path: 'my-bookings', component: MyBookingsComponent, canActivate: [AuthGuard] },
+    { path: 'booking', component: BookingComponent, canActivate: [AuthGuard] },
     { path: '404', component: ErrorPageComponent },
     { path: '**', redirectTo: '/404' },
 ];

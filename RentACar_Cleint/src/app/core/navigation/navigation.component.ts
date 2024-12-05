@@ -1,6 +1,6 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { UserService } from '../user/user.service';
+import { UserService } from '../../user/user.service';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
