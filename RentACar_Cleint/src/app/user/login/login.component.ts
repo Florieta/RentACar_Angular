@@ -12,7 +12,7 @@ import { UserService } from '../user.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(private userService: UserService, private router: Router) { }
 
   login(form: NgForm) {
     if (form.invalid) {
@@ -26,10 +26,9 @@ export class LoginComponent {
       next: (response) => {
         console.log(response)
         localStorage.setItem('token', response.token);
-    if (response) {
-      localStorage.setItem('user', JSON.stringify(response));
-    }
-
+        if (response) {
+          localStorage.setItem('user', JSON.stringify(response));
+        }
         console.log('Login successful!');
         this.router.navigate(['/home']);
       },

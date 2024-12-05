@@ -25,7 +25,7 @@
     @if(renterProfile){
       <div class="profile-card">
         <div class="profile-header">
-          <div class="avatar">{{ (renterProfile.firstName) }}</div>
+          <div class="avatar">{{ (renterProfile.firstName.charAt(0) || '') + (renterProfile.lastName.charAt(0) || '') }}</div>
           <div class="header-info">
             <h2>{{ renterProfile.firstName }} {{renterProfile.lastName}}</h2>
             <p>{{ renterProfile.email }}</p>

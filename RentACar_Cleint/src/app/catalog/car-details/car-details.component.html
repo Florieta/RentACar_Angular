@@ -1,15 +1,15 @@
-@if(loading){
+@if (loading) {
   <app-loader />
-}@else {
+} @else {
   <div class="car-detail-container">
     <div class="car-detail-header">
       <h2>{{ car?.make }} {{ car?.model }} ({{ car?.makeYear }})</h2>
-      <p>{{ car?.dailyRate }}€ per day</p>
+      <p class="daily-rate">{{ car?.dailyRate }}€ per day</p>
     </div>
-  
+
     <div class="car-detail-body">
       <img src="assets/cars/1111.jpg" alt="Car Image" class="car-detail-image" />
-  
+
       <div class="car-info">
         <p><strong>Category:</strong> {{ car?.categoryName }}</p>
         <p><strong>Doors:</strong> {{ car?.doors }} | <strong>Seats:</strong> {{ car?.seats }}</p>
@@ -19,24 +19,27 @@
         <p><strong>Registration:</strong> {{ car?.regNumber }}</p>
       </div>
     </div>
-  
+
     <div class="car-detail-actions">
-      <ng-container *ngIf="user?.token">
-        <ng-container *ngIf="user?.user?.renterId">
-          <button class="book-button" [routerLink]="'/booking'" [queryParams]="{ carId: car?.id, dailyRate: car?.dailyRate }">
-            Book Now
+      @if (user?.token) {
+        <ng-container>
+          @if (user?.user?.renterId) {
+            <ng-container>
+              <button class="book-button" [routerLink]="'/booking'"
+                [queryParams]="{ carId: car?.id, dailyRate: car?.dailyRate }">
+                Book Now
+              </button>
+            </ng-container>
+          }
+        </ng-container>
+      } @else {
+        <ng-container>
+          <p>You need to login in order to book this car!</p>
+          <button class="login-button" [routerLink]="'/login'">
+            Login
           </button>
         </ng-container>
-      </ng-container>
-  
-      <ng-container *ngIf="!user?.token">
-        <p>You need to login to book this car!</p>
-        <button class="login-button" [routerLink]="'/login'">
-          Login
-        </button>
-      </ng-container>
+      }
     </div>
   </div>
 }
-
-  

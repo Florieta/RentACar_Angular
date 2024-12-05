@@ -4,11 +4,13 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { DealerRegistrationRequest } from '../../types/dealer-registration-request';
 import { UserService } from '../user.service';
+import { EmailDirective } from '../../directives/email.directive';
+import { DOMAINS } from '../../constants';
 
 @Component({
   selector: 'app-register-as-dealer',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [CommonModule, FormsModule, RouterLink, EmailDirective],
   templateUrl: './register-as-dealer.component.html',
   styleUrl: './register-as-dealer.component.css'
 })
@@ -24,6 +26,7 @@ export class RegisterAsDealerComponent {
     companyNumber: '',
     address: '',
   };
+  domains = DOMAINS;
 
   constructor(private userService: UserService, private router: Router) {}
 
@@ -36,11 +39,8 @@ export class RegisterAsDealerComponent {
         },
         (error) => {
           console.error('Dealer registration failed', error);
-          alert('Dealer registration failed. Please try again.');
         }
       );
-    } else {
-      alert('Please fill in all required fields correctly.');
     }
   }
 }
