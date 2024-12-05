@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { CarService } from '../car.service';
 import { Car } from '../types/car';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from '../shared/loader/loader.component';
 
 @Component({
   selector: 'app-catalog',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [CommonModule, FormsModule, RouterLink, LoaderComponent],
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.css']
 })
@@ -19,6 +20,7 @@ export class CatalogComponent implements OnInit {
   searchQuery: string = ''; 
   currentPage: number = 1; 
   itemsPerPage: number = 6; 
+  isLoading: boolean = false; 
 
   constructor(private carService: CarService) {}
 
@@ -27,13 +29,18 @@ export class CatalogComponent implements OnInit {
   }
 
   loadCars(): void {
+    this.isLoading = true;
     this.carService.getAllCars().subscribe({
       next: (data) => {
         this.cars = data; 
         this.filteredCars = [...this.cars]; 
         this.updateDisplayedCars(); 
+        this.isLoading = false;
       },
-      error: (err) => console.error('Error loading cars:', err)
+      error: (err) => {
+        console.error('Error loading cars:', err);
+        this.isLoading = false;  
+      }
     });
   }
 

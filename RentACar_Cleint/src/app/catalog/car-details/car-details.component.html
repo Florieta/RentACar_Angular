@@ -1,11 +1,14 @@
-<div class="car-detail-container">
+@if(loading){
+  <app-loader />
+}@else {
+  <div class="car-detail-container">
     <div class="car-detail-header">
       <h2>{{ car?.make }} {{ car?.model }} ({{ car?.makeYear }})</h2>
       <p>{{ car?.dailyRate }}€ per day</p>
     </div>
   
     <div class="car-detail-body">
-      <img [src]="" alt="Car Image" class="car-detail-image" />
+      <img src="assets/cars/1111.jpg" alt="Car Image" class="car-detail-image" />
   
       <div class="car-info">
         <p><strong>Category:</strong> {{ car?.categoryName }}</p>
@@ -34,4 +37,6 @@
       </ng-container>
     </div>
   </div>
+}
+
   

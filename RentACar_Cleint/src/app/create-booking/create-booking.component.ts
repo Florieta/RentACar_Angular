@@ -88,7 +88,7 @@ export class BookingComponent implements OnInit {
       return;
     }
 
-    const bookingData = { ...this.formValues };
+    const bookingData = { ...this.formValues, renterId: this.renterId };
     this.isLoading = true;  
 
     this.bookingService.createBooking(bookingData).subscribe(

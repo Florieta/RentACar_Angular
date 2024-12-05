@@ -3,11 +3,12 @@ import { Booking } from '../types/booking';
 import { BookingService } from '../booking.service';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../user/user.service';
+import { LoaderComponent } from '../shared/loader/loader.component';
 
 @Component({
   selector: 'app-mybookings',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, LoaderComponent],
   templateUrl: './mybookings.component.html',
   styleUrls: ['./mybookings.component.css'], 
 })
