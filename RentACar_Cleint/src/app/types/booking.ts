@@ -13,5 +13,5 @@ export interface Booking {
     pickUpLocation: string;
     dropOffLocation: string;
     insurance?: string;
-    renterId: string;
+    renterId: number;
   }
