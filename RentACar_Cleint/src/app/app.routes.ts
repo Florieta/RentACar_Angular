@@ -11,6 +11,7 @@ import { MyCarsComponent } from './car/mycars/mycars.component';
 import { MyBookingsComponent } from './booking/mybookings/mybookings.component';
 import { BookingComponent } from './booking/create-booking/create-booking.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { AddCarComponent } from './car/add-car/add-car.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -28,6 +29,7 @@ export const routes: Routes = [
     { path: 'my-profile', component: MyProfileComponent, canActivate: [AuthGuard] },
     { path: 'car/:id', component: CarDetailComponent }, 
     { path: 'my-cars', component: MyCarsComponent, canActivate: [AuthGuard] }, 
+    { path: 'add-car', component: AddCarComponent, canActivate: [AuthGuard] }, 
     { path: 'my-bookings', component: MyBookingsComponent, canActivate: [AuthGuard] },
     { path: 'booking', component: BookingComponent, canActivate: [AuthGuard] },
     { path: '404', component: ErrorPageComponent },

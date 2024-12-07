@@ -16,6 +16,7 @@ export class UserService implements OnDestroy {
   private userSubscription: Subscription | null = null;
   private readonly TOKEN_KEY = 'token';
   private readonly USER_KEY = 'user';
+  private apiUrl = 'https://localhost:7016/api';
 
   get isLogged(): boolean {
     return !!this.user;
@@ -56,7 +57,7 @@ export class UserService implements OnDestroy {
 
   login(userName: string, password: string) {
     return this.http
-      .post<User>('https://localhost:7016/api/Authentication/login', { userName, password })
+      .post<User>(`${this.apiUrl}/Authentication/login`, { userName, password })
       .pipe(
         tap((user) => {
           this.user$$.next(user);
@@ -70,7 +71,7 @@ export class UserService implements OnDestroy {
 
   registerRenter(renterData: RenterRegistrationRequest) {
     return this.http
-      .post<User>(`https://localhost:7016/api/Authentication/register/renter`, renterData)
+      .post<User>(`${this.apiUrl}/Authentication/register/renter`, renterData)
       .pipe(
         tap((user) => {
           console.log('Renter registered successfully:', user);
@@ -84,7 +85,7 @@ export class UserService implements OnDestroy {
 
   registerDealer(dealerData: DealerRegistrationRequest) {
     return this.http
-      .post<User>(`https://localhost:7016/api/Authentication/register/dealer`, dealerData)
+      .post<User>(`${this.apiUrl}/Authentication/register/dealer`, dealerData)
       .pipe(
         tap((user) => {
           console.log('Dealer registered successfully:', user);
@@ -102,13 +103,13 @@ export class UserService implements OnDestroy {
   
     if (!token) {
       console.error('No token found in localStorage');
-      return this.http.get('https://localhost:7016/api/Authentication/logout');
+      return this.http.get(`${this.apiUrl}/Authentication/logout`);
     }
   
     const headers = new HttpHeaders().set('Token', token);
 
     return this.http
-      .get('https://localhost:7016/api/Authentication/logout', { headers })
+      .get(`${this.apiUrl}/Authentication/logout`, { headers })
       .pipe(
         tap(() => {
           this.user$$.next(null);

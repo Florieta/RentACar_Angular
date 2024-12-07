@@ -4,13 +4,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
 import { Rating } from '../types/rating';
 import { map } from 'rxjs/operators';
+import { CarForm } from '../types/car-form';
+import { Category } from '../types/category';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CarService {
 
-  private apiUrl = 'https://localhost:7016/api/Car';
+  private apiUrl = 'https://localhost:7016/api';
 
   constructor(private http: HttpClient) {}
 
@@ -19,17 +21,25 @@ export class CarService {
   }
 
   getCarById(id: number): Observable<Car> {
-    return this.http.get<Car>(`https://localhost:7016/api/Car/${id}`);
+    return this.http.get<Car>(`${this.apiUrl}/Car/${id}`);
   }
 
   getCarsByDealerId(dealerId: number): Observable<Car[]> {
-    return this.http.get<Car[]>(`https://localhost:7016/api/Car/Dealer/${dealerId}`);
+    return this.http.get<Car[]>(`${this.apiUrl}/Car/Dealer/${dealerId}`);
   }
 
   getRatingsByCarId(carId: number): Observable<number[]> {
-    return this.http.get<{ rate: number }[]>(`https://localhost:7016/api/Rating/Car/${carId}`)
+    return this.http.get<{ rate: number }[]>(`${this.apiUrl}/Rating/Car/${carId}`)
       .pipe(
         map((ratings) => ratings.map(rating => rating.rate)) 
       );
+  }
+
+  createCar(carData: CarForm): Observable<any> {
+    return this.http.post(`${this.apiUrl}/Car`, carData);
+  }
+
+  getCategories(): Observable<Category[]> {
+    return this.http.get<Category[]>(`${this.apiUrl}/Category`);
   }
 }

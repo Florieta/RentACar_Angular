@@ -10,13 +10,14 @@ import { Dealer } from '../types/dealer';
 })
 export class ProfileService {
     private readonly TOKEN_KEY = 'token';
+    private apiUrl = 'https://localhost:7016/api';
 
     constructor(private http: HttpClient) {}
   
     getDealerProfileById(userId: string) {
       const token = localStorage.getItem(this.TOKEN_KEY);
       console.log(userId)
-      return this.http.get<Dealer>(`https://localhost:7016/api/Dealer/${userId}`, {
+      return this.http.get<Dealer>(`${this.apiUrl}/Dealer/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       }).pipe(
         tap(
@@ -32,7 +33,7 @@ export class ProfileService {
 
     getRenterProfileById(userId: string): Observable<any> {
         const token = localStorage.getItem(this.TOKEN_KEY);
-        return this.http.get<any>(`https://localhost:7016/api/Renter/${userId}`, {
+        return this.http.get<any>(`${this.apiUrl}/Renter/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
       }

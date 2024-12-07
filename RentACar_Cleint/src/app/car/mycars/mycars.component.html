@@ -1,13 +1,8 @@
-<div *ngIf="isLoading" class="loading">
-    <p>Loading your cars...</p>
-  </div>
-  
-  <div *ngIf="errorMessage && !isLoading" class="error">
-    <p>{{ errorMessage }}</p>
-  </div>
-  
-  <div *ngIf="!isLoading && cars.length > 0" class="cars-list">
-    <h2>My Cars</h2>
+@if(isLoading){
+  <app-loader />
+}
+@if(!isLoading && cars.length > 0){
+  <div class="cars-list">
     <table>
       <thead>
         <tr>
@@ -23,22 +18,28 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let car of cars">
-          <td>{{ car.make }} {{ car.model }}</td>
-          <td>{{ car.makeYear }}</td>
-          <td>{{ car.categoryName }}</td>
-          <td>{{ car.regNumber }}</td>
-          <td>{{ car.dailyRate}}</td>
-          <td>{{ car.fuel }}</td>
-          <td>{{ car.transmission }}</td>
-          <td>{{ car.seats }}</td>
-          <td>{{ car.doors }}</td>
-        </tr>
+        @for (car of cars; track $index) {
+          <tr>
+            <td>{{ car.make }} {{ car.model }}</td>
+            <td>{{ car.makeYear }}</td>
+            <td>{{ car.categoryName }}</td>
+            <td>{{ car.regNumber }}</td>
+            <td>{{ car.dailyRate}}</td>
+            <td>{{ car.fuel }}</td>
+            <td>{{ car.transmission }}</td>
+            <td>{{ car.seats }}</td>
+            <td>{{ car.doors }}</td>
+          </tr>
+        }
       </tbody>
     </table>
   </div>
+}
   
-  <div *ngIf="!isLoading && cars.length === 0 && !errorMessage" class="no-cars">
+@if(!isLoading && cars.length === 0){
+  <div class="no-cars">
     <p>You have no cars listed.</p>
   </div>
+}
+
   

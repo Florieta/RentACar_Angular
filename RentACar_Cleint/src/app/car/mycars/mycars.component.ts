@@ -3,11 +3,12 @@ import { Car } from '../../types/car';
 import { CarService } from '../car.service';
 import { UserService } from '../../user/user.service';
 import { CommonModule } from '@angular/common';
+import { LoaderComponent } from '../../shared/loader/loader.component';
 
 @Component({
     selector: 'app-mycars',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, LoaderComponent],
     templateUrl: './mycars.component.html',
     styleUrls: ['./mycars.component.css']
 })
