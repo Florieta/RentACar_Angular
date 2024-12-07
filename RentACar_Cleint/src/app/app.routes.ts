@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { CatalogComponent } from './catalog/catalog.component';
+import { CatalogComponent } from './car/catalog/catalog.component';
 import { LoginComponent } from './user/login/login.component';
 import { RegisterAsDealerComponent } from './user/register-as-dealer/register-as-dealer.component';
 import { RegisterAsRenterComponent } from './user/register-as-renter/register-as-renter.component';
 import { MyProfileComponent } from './user/my-profile/my-profile.component';
 import { AuthGuard } from './guards/auth.guard';
-import { CarDetailComponent } from './catalog/car-details/car-details.component';
-import { MyCarsComponent } from './mycars/mycars.component';
-import { MyBookingsComponent } from './mybookings/mybookings.component';
-import { BookingComponent } from './create-booking/create-booking.component';
+import { CarDetailComponent } from './car/car-details/car-details.component';
+import { MyCarsComponent } from './car/mycars/mycars.component';
+import { MyBookingsComponent } from './booking/mybookings/mybookings.component';
+import { BookingComponent } from './booking/create-booking/create-booking.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
 export const routes: Routes = [

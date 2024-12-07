@@ -10,9 +10,10 @@
       @for (car of displayedCars; track $index) {
         <div class="catalog-item">
         <div class="car-info">
-          <img src="assets/cars/1111.jpg" alt="Car Image" class="car-image" />
+          <img src={{car.imageUrl}} alt="Car Image" class="car-image" />
           <h3>{{ car.make }} {{ car.model }}</h3>
           <p>Category: {{ car.categoryName }}</p>
+          <p>Price: {{ car.dailyRate }}€</p>
           <a [routerLink]="['/car', car.id]" class="view-details-btn">
             View Details
           </a>

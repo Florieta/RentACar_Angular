@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CarService } from '../car.service';
-import { Car } from '../types/car';
+import { Car } from '../../types/car';
 import { FormsModule } from '@angular/forms';
-import { LoaderComponent } from '../shared/loader/loader.component';
+import { LoaderComponent } from '../../shared/loader/loader.component';
 
 @Component({
   selector: 'app-catalog',
@@ -19,7 +19,7 @@ export class CatalogComponent implements OnInit {
   displayedCars: Car[] = []; 
   searchQuery: string = ''; 
   currentPage: number = 1; 
-  itemsPerPage: number = 6; 
+  itemsPerPage: number = 8; 
   isLoading: boolean = false; 
 
   constructor(private carService: CarService) {}

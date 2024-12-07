@@ -9,8 +9,12 @@ const { apiUrl } = environment;
 const API = '/api';
 
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
-  const user = JSON.parse(localStorage.getItem('user') || '{}');
-  const token = user?.token;
+  let token: string | null = null;
+
+  if (typeof window !== 'undefined' && localStorage) {
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
+    token = user?.token;
+  }
 
   if (token) {
     req = req.clone({

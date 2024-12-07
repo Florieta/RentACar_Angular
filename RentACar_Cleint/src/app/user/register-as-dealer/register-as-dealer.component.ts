@@ -5,7 +5,7 @@ import { Router, RouterLink } from '@angular/router';
 import { DealerRegistrationRequest } from '../../types/dealer-registration-request';
 import { UserService } from '../user.service';
 import { EmailDirective } from '../../directives/email.directive';
-import { DOMAINS } from '../../constants';
+import { DOMAINS } from '../../utils/constants';
 
 @Component({
   selector: 'app-register-as-dealer',

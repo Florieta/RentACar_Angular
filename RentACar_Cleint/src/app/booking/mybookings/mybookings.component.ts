@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Booking } from '../types/booking';
+import { Booking } from '../../types/booking';
 import { BookingService } from '../booking.service';
 import { CommonModule } from '@angular/common';
-import { UserService } from '../user/user.service';
-import { LoaderComponent } from '../shared/loader/loader.component';
+import { UserService } from '../../user/user.service';
+import { LoaderComponent } from '../../shared/loader/loader.component';
 
 @Component({
   selector: 'app-mybookings',

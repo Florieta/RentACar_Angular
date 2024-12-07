@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Car } from '../../types/car';
-import { CarService } from '../../car.service';
+import { CarService } from '../car.service';
 import { Subscription } from 'rxjs';
 import { UserService } from '../../user/user.service';
 import { CommonModule } from '@angular/common';

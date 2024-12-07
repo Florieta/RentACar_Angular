@@ -4,7 +4,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { UserService } from '../user.service';
 import { RenterRegistrationRequest } from '../../types/renter-registration-request';
-import { DOMAINS } from '../../constants';
+import { DOMAINS } from '../../utils/constants';
 import { EmailDirective } from '../../directives/email.directive';
 
 @Component({

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { CarLocation } from '../types/location';
+import { CarLocation } from '../../types/location';
 import { BookingService } from '../booking.service';
 import { CommonModule } from '@angular/common';
-import { UserService } from '../user/user.service';
-import { User } from '../types/user';
+import { UserService } from '../../user/user.service';
+import { User } from '../../types/user';
 
 @Component({
   selector: 'app-booking',

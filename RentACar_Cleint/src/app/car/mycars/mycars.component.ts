@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Car } from '../types/car';
+import { Car } from '../../types/car';
 import { CarService } from '../car.service';
-import { UserService } from '../user/user.service';
+import { UserService } from '../../user/user.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
