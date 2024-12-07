@@ -7,6 +7,8 @@ import { UserService } from '../../user/user.service';
 import { CommonModule } from '@angular/common';
 import { User } from '../../types/user';
 import { LoaderComponent } from '../../shared/loader/loader.component';
+import { AverageRatingPipe } from '../../pipes/average.rating.pipe';
+
 
 @Component({
   selector: 'app-car-details',
@@ -20,6 +22,9 @@ export class CarDetailComponent implements OnInit, OnDestroy {
   user: User | null = null;  
   userSubscription: Subscription | null = null;
   loading: boolean = true;
+  ratings: number[] = []; 
+  averageRating: number = 0; 
+  stars: number[] = [1, 2, 3, 4, 5]
 
   constructor(
     private route: ActivatedRoute,    
@@ -46,8 +51,18 @@ export class CarDetailComponent implements OnInit, OnDestroy {
       );
     }
 
-    
-
+    this.carService.getRatingsByCarId(Number(carId)).subscribe(
+      (ratings: number[]) => {
+        this.ratings = ratings;
+        console.log(ratings)
+        this.averageRating = new AverageRatingPipe().transform(ratings); 
+        console.log(this.averageRating)
+      },
+      (error) => {
+        console.error('Error fetching ratings:', error);
+      }
+    );
+  
     this.userSubscription = this.userService.userObservable.subscribe(
       (user) => {
         this.user = user; 

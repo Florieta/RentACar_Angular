@@ -5,10 +5,24 @@
     <div class="car-detail-header">
       <h2>{{ car?.make }} {{ car?.model }} ({{ car?.makeYear }})</h2>
       <p class="daily-rate">{{ car?.dailyRate }}€ per day</p>
+      @if(ratings.length > 0){
+        <div>
+          <div class="average-rating">
+            <strong>Rating:</strong>
+            <div class="stars">
+              @for (star of stars; track $index) {
+                <span [ngClass]="{'filled': $index < averageRating}">
+                  ★
+                </span>
+              }
+            </div>
+          </div>
+        </div>
+      }
     </div>
 
     <div class="car-detail-body">
-      <img src="assets/cars/1111.jpg" alt="Car Image" class="car-detail-image" />
+      <img src={{car?.imageUrl}} alt="Car Image" class="car-detail-image" />
 
       <div class="car-info">
         <p><strong>Category:</strong> {{ car?.categoryName }}</p>
