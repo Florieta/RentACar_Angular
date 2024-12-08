@@ -11,7 +11,6 @@ import { RenterRegistrationRequest } from '../types/renter-registration-request'
 })
 export class UserService implements OnDestroy {
   private user$$ = new BehaviorSubject<User | null>(null);
-  private user$ = this.user$$.asObservable();
   private user: User | null = null;
   private userSubscription: Subscription | null = null;
   private readonly TOKEN_KEY = 'token';
@@ -25,6 +24,9 @@ export class UserService implements OnDestroy {
   get userObservable() {
     return this.user$;
   }
+  get user$(): Observable<User | null> {
+    return this.user$$.asObservable();
+  }
 
   constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: Object) {
     this.userSubscription = this.user$.subscribe((user) => {
@@ -34,25 +36,52 @@ export class UserService implements OnDestroy {
           localStorage.setItem(this.TOKEN_KEY, user.token);
           localStorage.setItem(this.USER_KEY, JSON.stringify(user));
         }
-      } else {
-        if (isPlatformBrowser(this.platformId)) {
-          localStorage.removeItem(this.TOKEN_KEY);
-          localStorage.removeItem(this.USER_KEY);
-        }
-      }
+      } 
     });
 
-    
     this.loadUserFromLocalStorage();
   }
 
-  private loadUserFromLocalStorage() {
+  public loadUserFromLocalStorage() {
     if (isPlatformBrowser(this.platformId)) {
       const savedUser = localStorage.getItem(this.USER_KEY);
-      if (savedUser) {
-        this.user$$.next(JSON.parse(savedUser));
+      const savedToken = localStorage.getItem(this.TOKEN_KEY);
+  
+      if (savedUser && savedToken) {
+        const user = JSON.parse(savedUser);
+  
+        if (this.isTokenValid(savedToken)) {
+          this.user$$.next(user);
+        } else {
+          console.warn('Invalid token. Clearing storage.');
+          this.clearStorage();
+        }
+      } else {
+        console.warn('No user or token found. Setting user to null.');
+        this.user$$.next(null);
       }
     }
+  }
+
+  private clearStorage() {
+    this.user$$.next(null);
+    localStorage.removeItem(this.USER_KEY);
+    localStorage.removeItem(this.TOKEN_KEY);
+  }
+
+  private isTokenValid(token: string): boolean {
+    const decodedToken = this.decodeToken(token);
+    const currentTime = Math.floor(Date.now() / 1000);
+    return decodedToken?.exp > currentTime; 
+  }
+  
+  private decodeToken(token: string): any {
+    const parts = token.split('.');
+    if (parts.length === 3) {
+      const payload = parts[1];
+      return JSON.parse(atob(payload));  
+    }
+    return null;
   }
 
   login(userName: string, password: string) {
