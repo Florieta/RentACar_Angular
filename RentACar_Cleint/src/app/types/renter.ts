@@ -1,14 +1,12 @@
 export interface Renter {
-    id: number; 
+    id: number;
     age: number;
-    drivingLicenceNumber: string; 
+    drivingLicenceNumber: string;
     expiredDate: string;
-
-        firstName: string; 
-        lastName: string; 
-        userName: string; 
-        email: string; 
-        phoneNumber: string; 
-        renterId: number; 
-  }
-  
+    firstName: string;
+    lastName: string;
+    userName: string;
+    email: string;
+    phoneNumber: string;
+    renterId: number;
+}

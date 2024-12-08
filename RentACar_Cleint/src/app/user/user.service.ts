@@ -1,6 +1,6 @@
 import { Injectable, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { BehaviorSubject, catchError, Subscription, tap } from 'rxjs';
+import { BehaviorSubject, catchError, Observable, Subscription, tap } from 'rxjs';
 import { User } from '../types/user';
 import { isPlatformBrowser } from '@angular/common';
 import { DealerRegistrationRequest } from '../types/dealer-registration-request';

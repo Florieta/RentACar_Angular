@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Car } from '../types/car'; 
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
-import { Rating } from '../types/rating';
 import { map } from 'rxjs/operators';
 import { CarForm } from '../types/car-form';
 import { Category } from '../types/category';
@@ -17,7 +16,7 @@ export class CarService {
   constructor(private http: HttpClient) {}
 
   getAllCars(): Observable<Car[]> {
-    return this.http.get<Car[]>(this.apiUrl);
+    return this.http.get<Car[]>(`${this.apiUrl}/Car`);
   }
 
   getCarById(id: number): Observable<Car> {

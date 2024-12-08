@@ -47,11 +47,31 @@ export class MyProfileComponent {
     }
   }
 
-  navigateToProfile() {
-    if (this.user?.renterId) {
-      this.router.navigate(['/profile-renter']);
+  openEditForm(type: 'dealer' | 'renter'): void {
+    if (type === 'dealer' && this.dealerProfile) {
+      this.router.navigate(['/edit-profile'], {
+        queryParams: {
+          id: this.user.dealerId,
+          type: 'dealer'
+        },
+        state: { 
+          profileType: 'dealer', 
+          profile: this.dealerProfile
+        }
+      });
+    } else if (type === 'renter' && this.renterProfile) {
+      this.router.navigate(['/edit-profile'], {
+        queryParams: {
+          id: this.user.renterId,
+          type: 'renter'
+        },
+        state: { 
+          profileType: 'renter', 
+          profile: this.renterProfile 
+        }
+      });
     } else {
-      this.router.navigate(['/profile-dealer']);
+      console.error('Invalid profile data or type');
     }
   }
 }

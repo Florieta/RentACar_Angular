@@ -3,24 +3,15 @@
     <div class="content">
       <h1>Upgrade your Travel</h1>
       <p>Enjoy secret offers up to -70% off the best cars every Sunday.</p>
-      <button class="register-button" (click)="onRegister()">Register</button>
-      <p class="subtext">Discover the experience</p>
+      @if(isLogged){
+        <h2>Welcome back!</h2>
+        <p>Your next adventure awaits. Explore our exclusive deals and enjoy the best prices.</p>
+      }@else {
+        <button class="register-button" (click)="onRegister()">Register</button>
+        <p class="subtext">Discover the experience</p>
+      }
     </div>
   </section>
-  
-  <!-- <section class="product-categories">
-    <h2>For all tastes and all desires</h2>
-    <div class="categories-container">
-      <div class="category" *ngFor="let image of images" (click)="navigateToCatalog()">
-        <div
-          class="category-image"
-          [style.backgroundImage]="'url(' + image.url + ')'"
-        ></div>
-        <div class="category-backdrop"></div>
-        <h3>{{ image.title }}</h3>
-      </div>
-    </div>
-  </section> -->
   
   <section class="product-values">
     <h2>How it Works</h2>

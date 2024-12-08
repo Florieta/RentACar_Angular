@@ -12,6 +12,7 @@ import { MyBookingsComponent } from './booking/mybookings/mybookings.component';
 import { BookingComponent } from './booking/create-booking/create-booking.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { AddCarComponent } from './car/add-car/add-car.component';
+import { EditProfileComponent } from './user/edit-profile/edit-profile.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -27,6 +28,7 @@ export const routes: Routes = [
         ],
     },
     { path: 'my-profile', component: MyProfileComponent, canActivate: [AuthGuard] },
+    { path: 'edit-profile', component: EditProfileComponent, canActivate: [AuthGuard] },
     { path: 'car/:id', component: CarDetailComponent }, 
     { path: 'my-cars', component: MyCarsComponent, canActivate: [AuthGuard] }, 
     { path: 'add-car', component: AddCarComponent, canActivate: [AuthGuard] }, 

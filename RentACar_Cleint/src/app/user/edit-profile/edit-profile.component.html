@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="form-container">
+      <h1>Edit Your Profile</h1>
+      <form id="editProfileForm">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" 
+                 placeholder="Enter your first name"
+                 [(ngModel)]="profile.firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" 
+                 placeholder="Enter your last name"
+                 [(ngModel)]="profile.lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" 
+                 placeholder="Enter your email"
+                 [(ngModel)]="profile.email">
+        </div>
+  
+        <div class="form-group">
+          <label for="userName">Username</label>
+          <input type="text" id="userName" name="userName" 
+                 placeholder="Enter your username"
+                 [(ngModel)]="profile.userName">
+        </div>
+  
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" 
+                 placeholder="Enter your phone number"
+                 [(ngModel)]="profile.phoneNumber">
+        </div>
+  
+        @if(profileType === 'dealer'){
+          <div class="form-group" id="dealerFields">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName" 
+                   placeholder="Enter your company name"
+                   [(ngModel)]="profile.companyName">
+          </div>
+  
+          <div class="form-group" id="dealerFields">
+            <label for="companyNumber">Company Number</label>
+            <input type="text" id="companyNumber" name="companyNumber" 
+                   placeholder="Enter your company number"
+                   [(ngModel)]="profile.companyNumber">
+          </div>
+  
+          <div class="form-group" id="dealerFields">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" 
+                   placeholder="Enter your address"
+                   [(ngModel)]="profile.address">
+          </div>
+        }@else{
+          <div class="form-group" id="renterFields">
+            <label for="drivingLicenceNumber">Driving Licence Number</label>
+            <input type="text" id="drivingLicenceNumber" name="drivingLicenceNumber"
+                   placeholder="Enter your driving licence number"
+                   [(ngModel)]="profile.drivingLicenceNumber">
+          </div>
+  
+          <div class="form-group" id="renterFields">
+            <label for="expiredDate">Licence Expiry Date</label>
+            <input type="date" id="expiredDate" name="expiredDate"
+                   [(ngModel)]="profile.expiredDate">
+          </div>
+  
+          <div class="form-group" id="renterFields">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" 
+                   placeholder="Enter your age"
+                   [(ngModel)]="profile.age">
+          </div>
+        }
+  
+        <div class="form-group">
+          <button type="submit" class="form-button" (click)="saveChanges()">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
