@@ -80,16 +80,11 @@ export class AddCarComponent implements OnInit {
     };
     const fileName = file.name;
     this.formValues.imageUrl = fileName;
-    console.log(fileName, this.formValues.imageUrl)
   
     fetch(url, options)
       .then((response) => response.json())
-      .then((data) => {
-        if (data && data.imageUrl) {
-          
-        } else {
-          console.error('Image upload failed');
-        }
+      .then(() => {
+       console.log('Image successfully uploaded')
       })
       .catch((error) => {
         console.error('Error during image upload:', error);
@@ -107,7 +102,6 @@ export class AddCarComponent implements OnInit {
     this.carService.createCar(carData).subscribe(
       (response) => {
         this.isLoading = false;  
-        console.log('Car successfully added!', response);
         this.router.navigate(['/my-cars']);  
       },
       (error) => {

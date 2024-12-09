@@ -78,12 +78,18 @@
         name="paymentType"
         class="form-control"
         [(ngModel)]="formValues.paymentType"
+        #paymentType="ngModel"
         required
       >
         <option value="card">Card</option>
         <option value="cash">Cash</option>
         <option value="bankTransfer">Bank Transfer</option>
       </select>
+      @if(paymentType.invalid && paymentType.touched){
+        <div class="error-message">
+          Payment type is required.
+        </div>
+      }
     </div>
 
     <div class="form-group">
@@ -93,12 +99,18 @@
         name="pickUpLocationId"
         class="form-control"
         [(ngModel)]="formValues.pickUpLocationId"
+        #pickUpLocation="ngModel"
         required
       >
         <option *ngFor="let location of locations" [value]="location.id">
           {{ location.locationName }}
         </option>
       </select>
+      @if(pickUpLocation.invalid && pickUpLocation.touched){
+        <div class="error-message">
+          Pick up location is required.
+        </div>
+      }
     </div>
 
     <div class="form-group">
@@ -108,12 +120,18 @@
         name="dropOffLocationId"
         class="form-control"
         [(ngModel)]="formValues.dropOffLocationId"
+        #dropOffLocation="ngModel"
         required
       >
         <option *ngFor="let location of locations" [value]="location.id">
           {{ location.locationName }}
         </option>
       </select>
+      @if(dropOffLocation.invalid && dropOffLocation.touched){
+        <div class="error-message">
+          Drop off location is required.
+        </div>
+      }
     </div>
 
     <div class="form-group">

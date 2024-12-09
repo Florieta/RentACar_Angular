@@ -55,6 +55,7 @@ export class MyCarsComponent implements OnInit {
             }
         });
     }
+    
     private getDealerIdFromLocalStorage(): number | null {
         const storedUser = localStorage.getItem('user');
         if (storedUser) {
