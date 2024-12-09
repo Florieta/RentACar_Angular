@@ -18,7 +18,7 @@ export class BookingComponent implements OnInit {
   formValues = {
     pickUpDateAndTime: '',
     dropOffDateAndTime: '',
-    duration: 1,
+    duration: 0,
     totalAmount: 0,
     paymentType: 'card',
     pickUpLocationId: null,

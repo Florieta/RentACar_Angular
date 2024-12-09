@@ -61,7 +61,10 @@ export class EditProfileComponent implements OnInit {
       this.profileService.getRenterProfileById(profileId).subscribe(
         (renterProfile) => {
           console.log('Loaded Renter Profile:', renterProfile);
-          this.profile = { ...renterProfile, id: this.user.id, dealerId: this.user.renterId };
+          this.profile = { ...renterProfile, id: this.user.id, renterId: this.user.renterId };
+          if (this.profile.expiredDate) {
+            this.profile.expiredDate = this.formatDate(this.profile.expiredDate);
+          }
         },
         (error) => {
           console.error('Error loading renter profile:', error);
@@ -69,6 +72,10 @@ export class EditProfileComponent implements OnInit {
         }
       );
     }
+  }
+
+  formatDate(dateString: string): string {
+    return dateString.split('T')[0];
   }
 
   saveChanges() {
