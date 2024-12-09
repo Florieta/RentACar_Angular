@@ -14,9 +14,11 @@
         required
         #pickUpDate="ngModel"
       />
-      <div *ngIf="pickUpDate.invalid && pickUpDate.touched" class="error-message">
-        Pick-up date and time is required.
-      </div>
+      @if(pickUpDate.invalid && pickUpDate.touched){
+        <div class="error-message">
+          Pick-up date and time is required.
+        </div>
+      }
     </div>
 
     <div class="form-group">
@@ -30,9 +32,11 @@
         required
         #dropOffDate="ngModel"
       />
-      <div *ngIf="dropOffDate.invalid && dropOffDate.touched" class="error-message">
-        Drop-off date and time is required.
-      </div>
+      @if(dropOffDate.invalid && dropOffDate.touched){
+        <div class="error-message">
+          Drop-off date and time is required.
+        </div>
+      }
     </div>
 
     <div class="form-group">
@@ -48,9 +52,11 @@
         #duration="ngModel"
         min="1"
       />
-      <div *ngIf="duration.invalid && duration.touched" class="error-message">
-        Duration must be greater than 0.
-      </div>
+      @if(duration.invalid && duration.touched){
+        <div class="error-message">
+          Duration must be greater than 0.
+        </div>
+      }
     </div>
 
     <div class="form-group">
