@@ -39,11 +39,18 @@
     <div class="form-group">
       <label for="makeYear">Make Year</label>
       <input type="number" id="makeYear" class="form-control" [(ngModel)]="formValues.makeYear" #year="ngModel"
-        name="makeYear" required />
+        name="makeYear" placeholder=" " min=1886 yearrequired />
       @if(year.invalid && year.touched){
+      @if(year.errors?.['required']){
       <small style="color: red">
         Year is required.
       </small>
+      }
+      @if(year.errors?.['min']){
+      <small style="color: red">
+        Year cannot be earlier than 1886.
+      </small>
+      }
       }
     </div>
 
@@ -112,11 +119,6 @@
     <div class="form-group">
       <label for="imageUrl">Car Image</label>
       <input type="file" id="imageUrl" (change)="onFileChange($event)" class="form-control" />
-      @if(formValues.imageUrl){
-      <div>
-        <img [src]="formValues.imageUrl" alt="Image Preview" width="100" />
-      </div>
-      }
     </div>
 
     <div class="form-group">

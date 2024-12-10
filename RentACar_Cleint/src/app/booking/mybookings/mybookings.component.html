@@ -28,8 +28,10 @@
         <td>{{ booking.pickUpDateAndTime }}</td>
         <td>{{ booking.dropOffDateAndTime }}</td>
         <td>{{ booking.duration }}</td>
-        <td>
-          <button *ngIf="booking.isActive" (click)="cancelBooking(booking.id)">Cancel</button>
+        <td style="text-align: center;">
+          @if(booking.isActive){
+            <button (click)="cancelBooking(booking.id)">Cancel</button>
+          }
         </td>
       </tr>
       }
