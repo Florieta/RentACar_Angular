@@ -1,0 +1,14 @@
+------------------------------------------------
+4.1.2023 г. 15:20:16 ч.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+RentACar.WebApi.Controllers.OrderController.GetById (RentACar.WebApi)
+RentACar.WebApi.Controllers.OrderController.GetAllBookingsByRenter (RentACar.WebApi)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36

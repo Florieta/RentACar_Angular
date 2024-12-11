@@ -1,0 +1,484 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\dealercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\dealercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\viewmodels\\dealer\\getdealerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\viewmodels\\dealer\\getdealerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\dealers\\queries\\getdealerbyidasynchandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\dealers\\queries\\getdealerbyidasynchandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\dealers\\queries\\getdealerbyidasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\dealers\\queries\\getdealerbyidasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aspire\\AppData\\Roaming\\Microsoft\\UserSecrets\\c1b59235-0fcd-4260-8fe6-fb8218f51835\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\blobstoragecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\blobstoragecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\rentercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\rentercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\services\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.webapi\\controllers\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D0DE9B-F37E-4696-8866-585961346996}|RentACar.WebApi\\RentACar.WebApi.csproj|solutionrelative:rentacar.webapi\\controllers\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A13C8B75-55E3-46BC-9984-ED8199B17905}|RentACar.Domain\\RentACar.Domain.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.domain\\entitites\\dealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A13C8B75-55E3-46BC-9984-ED8199B17905}|RentACar.Domain\\RentACar.Domain.csproj|solutionrelative:rentacar.domain\\entitites\\dealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\services\\azurestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\services\\azurestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A66C0A-3DEC-4C22-B11B-2F6CAEF7660C}|RentACar.Infrastructure\\RentACar.Infrastructure.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.infrastructure\\data\\configuration\\renterconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79A66C0A-3DEC-4C22-B11B-2F6CAEF7660C}|RentACar.Infrastructure\\RentACar.Infrastructure.csproj|solutionrelative:rentacar.infrastructure\\data\\configuration\\renterconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A66C0A-3DEC-4C22-B11B-2F6CAEF7660C}|RentACar.Infrastructure\\RentACar.Infrastructure.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.infrastructure\\data\\configuration\\dealerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79A66C0A-3DEC-4C22-B11B-2F6CAEF7660C}|RentACar.Infrastructure\\RentACar.Infrastructure.csproj|solutionrelative:rentacar.infrastructure\\data\\configuration\\dealerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A66C0A-3DEC-4C22-B11B-2F6CAEF7660C}|RentACar.Infrastructure\\RentACar.Infrastructure.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.infrastructure\\data\\configuration\\applicationuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79A66C0A-3DEC-4C22-B11B-2F6CAEF7660C}|RentACar.Infrastructure\\RentACar.Infrastructure.csproj|solutionrelative:rentacar.infrastructure\\data\\configuration\\applicationuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\dealers\\commands\\create\\createdealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\dealers\\commands\\create\\createdealer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\dealers\\commands\\create\\createdealerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\dealers\\commands\\create\\createdealerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\cars\\commands\\create\\createcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\cars\\commands\\create\\createcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\cars\\commands\\update\\updatecarhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\cars\\commands\\update\\updatecarhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\cars\\commands\\create\\createcarhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\cars\\commands\\create\\createcarhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\cars\\queries\\getallcarsbydealeridhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\cars\\queries\\getallcarsbydealeridhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\cars\\queries\\getallcarsbydealerid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\cars\\queries\\getallcarsbydealerid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|d:\\softuni\\rentacar_angular\\server_asp.net\\rentacar.core\\cars\\queries\\getcarbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E900281-D6CA-47C8-87DF-273F4A68EEE4}|RentACar.Core\\RentACar.Application.csproj|solutionrelative:rentacar.core\\cars\\queries\\getcarbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetDealerByIdAsyncHandler.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsyncHandler.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsyncHandler.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsyncHandler.cs",
+              "RelativeToolTip": "RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsyncHandler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T17:06:57.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetDealerByIdAsync.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsync.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsync.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsync.cs",
+              "RelativeToolTip": "RentACar.Core\\Dealers\\Queries\\GetDealerByIdAsync.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T17:06:23.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RenterController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\RenterController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\RenterController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\RenterController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\RenterController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwC0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T11:03:23.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DealerController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\DealerController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\DealerController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\DealerController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\DealerController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T10:37:25.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAhwNcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T15:22:45.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\CarController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\CarController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\CarController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAEwIwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Program.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Program.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAB0AAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:43:13.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetDealerViewModel.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\ViewModels\\Dealer\\GetDealerViewModel.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\ViewModels\\Dealer\\GetDealerViewModel.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\ViewModels\\Dealer\\GetDealerViewModel.cs",
+              "RelativeToolTip": "RentACar.WebApi\\ViewModels\\Dealer\\GetDealerViewModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T17:07:22.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Aspire\\AppData\\Roaming\\Microsoft\\UserSecrets\\c1b59235-0fcd-4260-8fe6-fb8218f51835\\secrets.json",
+              "ToolTip": "C:\\Users\\Aspire\\AppData\\Roaming\\Microsoft\\UserSecrets\\c1b59235-0fcd-4260-8fe6-fb8218f51835\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-26T17:08:26.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StorageService.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Services\\StorageService.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Services\\StorageService.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Services\\StorageService.cs",
+              "RelativeToolTip": "RentACar.Core\\Services\\StorageService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwB8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BlobStorageController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\BlobStorageController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\BlobStorageController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\BlobStorageController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\BlobStorageController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T10:48:41.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RatingController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\RatingController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\RatingController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\RatingController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\RatingController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADgvzEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T07:00:52.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAzwCkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T10:29:39.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAADgv3YAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T19:24:59.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LocationController.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\LocationController.cs",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\Controllers\\LocationController.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\Controllers\\LocationController.cs",
+              "RelativeToolTip": "RentACar.WebApi\\Controllers\\LocationController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:53:26.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "RentACar.WebApi\\appsettings.Development.json",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.WebApi\\appsettings.Development.json",
+              "RelativeToolTip": "RentACar.WebApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-06T06:29:19.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Dealer.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Domain\\Entitites\\Dealer.cs",
+              "RelativeDocumentMoniker": "RentACar.Domain\\Entitites\\Dealer.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Domain\\Entitites\\Dealer.cs",
+              "RelativeToolTip": "RentACar.Domain\\Entitites\\Dealer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AzureStorage.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Services\\AzureStorage.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Services\\AzureStorage.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Services\\AzureStorage.cs",
+              "RelativeToolTip": "RentACar.Core\\Services\\AzureStorage.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RenterConfiguration.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Infrastructure\\Data\\Configuration\\RenterConfiguration.cs",
+              "RelativeDocumentMoniker": "RentACar.Infrastructure\\Data\\Configuration\\RenterConfiguration.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Infrastructure\\Data\\Configuration\\RenterConfiguration.cs",
+              "RelativeToolTip": "RentACar.Infrastructure\\Data\\Configuration\\RenterConfiguration.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationUserConfiguration.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Infrastructure\\Data\\Configuration\\ApplicationUserConfiguration.cs",
+              "RelativeDocumentMoniker": "RentACar.Infrastructure\\Data\\Configuration\\ApplicationUserConfiguration.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Infrastructure\\Data\\Configuration\\ApplicationUserConfiguration.cs",
+              "RelativeToolTip": "RentACar.Infrastructure\\Data\\Configuration\\ApplicationUserConfiguration.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DealerConfiguration.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Infrastructure\\Data\\Configuration\\DealerConfiguration.cs",
+              "RelativeDocumentMoniker": "RentACar.Infrastructure\\Data\\Configuration\\DealerConfiguration.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Infrastructure\\Data\\Configuration\\DealerConfiguration.cs",
+              "RelativeToolTip": "RentACar.Infrastructure\\Data\\Configuration\\DealerConfiguration.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CreateDealer.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Commands\\Create\\CreateDealer.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Dealers\\Commands\\Create\\CreateDealer.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Commands\\Create\\CreateDealer.cs",
+              "RelativeToolTip": "RentACar.Core\\Dealers\\Commands\\Create\\CreateDealer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateDealerHandler.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Commands\\Create\\CreateDealerHandler.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Dealers\\Commands\\Create\\CreateDealerHandler.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Dealers\\Commands\\Create\\CreateDealerHandler.cs",
+              "RelativeToolTip": "RentACar.Core\\Dealers\\Commands\\Create\\CreateDealerHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateCar.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Commands\\Create\\CreateCar.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Cars\\Commands\\Create\\CreateCar.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Commands\\Create\\CreateCar.cs",
+              "RelativeToolTip": "RentACar.Core\\Cars\\Commands\\Create\\CreateCar.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateCarHandler.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Commands\\Update\\UpdateCarHandler.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Cars\\Commands\\Update\\UpdateCarHandler.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Commands\\Update\\UpdateCarHandler.cs",
+              "RelativeToolTip": "RentACar.Core\\Cars\\Commands\\Update\\UpdateCarHandler.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetAllCarsByDealerIdHandler.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerIdHandler.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerIdHandler.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerIdHandler.cs",
+              "RelativeToolTip": "RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerIdHandler.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAABhwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GetAllCarsByDealerId.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerId.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerId.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerId.cs",
+              "RelativeToolTip": "RentACar.Core\\Cars\\Queries\\GetAllCarsByDealerId.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GetCarByIdHandler.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Queries\\GetCarByIdHandler.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Cars\\Queries\\GetCarByIdHandler.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Queries\\GetCarByIdHandler.cs",
+              "RelativeToolTip": "RentACar.Core\\Cars\\Queries\\GetCarByIdHandler.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAABhwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateCarHandler.cs",
+              "DocumentMoniker": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Commands\\Create\\CreateCarHandler.cs",
+              "RelativeDocumentMoniker": "RentACar.Core\\Cars\\Commands\\Create\\CreateCarHandler.cs",
+              "ToolTip": "D:\\SoftUni\\RentACar_Angular\\server_ASP.NET\\RentACar.Core\\Cars\\Commands\\Create\\CreateCarHandler.cs",
+              "RelativeToolTip": "RentACar.Core\\Cars\\Commands\\Create\\CreateCarHandler.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:38:48.936Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

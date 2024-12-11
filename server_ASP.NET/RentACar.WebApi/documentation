@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RentACar.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:RentACar.WebApi.Controllers.AuthenticationController">
+            <summary>
+            All authentication methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.AuthenticationController.Login(RentACar.WebApi.ViewModels.Users.UserLoginViewModel)">
+            <summary>
+            Generate a token for the logged user or returns unauthorized
+            </summary>
+            <returns>The user with the token ot unathorize</returns>
+            <response code="200">Gets the logged user and the token.</response>
+            <response code="401">Returns an authorized.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.AuthenticationController.EditDealer(RentACar.WebApi.ViewModels.Users.UserAuthViewModel)">
+            <summary>
+            Create a new user as dealer
+            </summary>
+            <param name="userAuthModel"></param>
+            <returns>The new created user</returns>
+            <response code="200">Gets the new instance of the created user</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.AuthenticationController.RegisterAsRenter(RentACar.WebApi.ViewModels.Users.UserRenterViewModel)">
+            <summary>
+            Create a new user as renter
+            </summary>
+            <param name="userRenterModel"></param>
+            <returns>The new created user</returns>
+            <response code="200">Gets the new instance of the created user</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.AuthenticationController.Logout(System.String)">
+            <summary>
+            Sign in out the user
+            </summary>
+            <param name="token">Receives a token from the header.</param>
+            <returns>Ok</returns>
+            <response code="200">Returns status ok</response>
+            
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.AuthenticationController.EditDealerProfile(RentACar.WebApi.ViewModels.Users.EditUserDealerModel,System.String)">
+            <summary>
+            Edit dealer user
+            </summary>
+            <param name="userDealerModel"></param>
+            <param name="id"></param>
+            <returns> The successfully updated object.</returns>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.AuthenticationController.EditRenterProfile(RentACar.WebApi.ViewModels.Users.EditUserRenterModel,System.String)">
+            <summary>
+            Edit dealer user
+            </summary>
+            <param name="userRenterModel"></param>
+            <param name="id"></param>
+            <returns> The successfully updated object.</returns>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.BlobStorageController">
+            <summary>
+            Blob storage methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.BlobStorageController.Upload(RentACar.Domain.Models.FileModel)">
+            <summary>
+            Upload a file in the storage
+            </summary>
+            <param name="model"></param>
+            <returns>Ok</returns>
+            <response code="200">The file was uploaded.</response>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.CarController">
+            <summary>
+            All car methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.All">
+            <summary>
+            Gets all cars from the database
+            </summary>
+            <returns>A list of all cars</returns>
+            <response code="200">Gets all cars.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.GetLatestCars">
+            <summary>
+            Gets latest cars from the database
+            </summary>
+            <returns>A list of latest cars</returns>
+            <response code="200">Gets all cars.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.GetById(System.Int32)">
+            <summary>
+            Gets a certain car by id
+            </summary>
+            <param name="id"></param>
+            <returns>Gets a certain instance of a car</returns>
+            <response code="200">Gets a car by identifier.</response>
+            <response code="404">If the car was not found.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.GetAllCarsByDealerId(System.Int32)">
+            <summary>
+            Gets all cars from the database by dealerId
+            </summary>
+            <param name="dealerId"></param>
+            <returns>All cars found with the specific dealerId</returns>
+            <response code="200">Gets all cars by identifier.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.Add(RentACar.WebApi.ViewModels.Car.AddCarModel)">
+            <summary>
+            Create a car and adds it to the database
+            </summary>
+            <param name="addCarDto"></param>
+            <returns>The new created car</returns>
+            <response code="200">Gets the created car</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.Edit(RentACar.WebApi.ViewModels.Car.EditCarViewModel)">
+            <summary>
+            Update a car and applies the changes to the database 
+            </summary>
+            <param name="editCarDto"></param>
+            <response code="200">Gets the edited car.</response>
+            <response code="404">If the car was not found.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.PartialUpdate(Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{RentACar.WebApi.ViewModels.Car.EditCarViewModel},System.Int32)">
+            <summary>
+            Partial update the car and applies the changes to the database using patch
+            </summary>
+            <param name="jsonPatchDocument"></param>
+            <param name="id"></param>
+            <returns>Returns the updated object</returns>
+            <response code="200">Gets the partial edited car</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CarController.Delete(System.Int32)">
+            <summary>
+            Marks the entity as deleted but it doesn't really 
+            removes it from the database / soft delete
+            </summary>
+            <param name="id"></param>
+            <returns>No content</returns>
+            <response code="204">No content</response>
+            <response code="404">If the car was not found.</response>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.CategoryController">
+            <summary>
+            All category methods 
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CategoryController.All">
+            <summary>
+            Gets all categories from the database
+            </summary>
+            <returns>A list of all categories</returns>
+            <response code="200">Gets all cars.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CategoryController.GetById(System.Int32)">
+            <summary>
+            Get a certain category by Id from the database
+            </summary>
+            <param name="id"></param>
+            <returns>Gets a certain category by indentifier</returns>
+            <response code="200">Gets a category by identifier.</response>
+            <response code="404">If the category was not found.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.CategoryController.Add(RentACar.WebApi.ViewModels.Category.AddCategoryModel)">
+            <summary>
+            Create a category and adds it to the database
+            </summary>
+            <param name="addCategoryDto"></param>
+            <returns>The new created category</returns>
+            <response code="200">Gets the created car</response>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.DealerController">
+            <summary>
+            All dealer methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.DealerController.GetById(System.Int32)">
+            <summary>
+            Gets a certain renter by id
+            </summary>
+            <param name="id"></param>
+            <returns>Gets a certain instance of a renter</returns>
+            <response code="200">Gets a renter by identifier.</response>
+            <response code="404">If the renter was not found.</response>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.LocationController">
+            <summary>
+            All location methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.LocationController.All">
+            <summary>
+            Gets all location from the database
+            </summary>
+            <returns>Returns a list of all locations</returns>
+            <response code="200">Gets all locations</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.LocationController.GetById(System.Int32)">
+            <summary>
+            Get a certain location by Id from the database
+            </summary>
+            <param name="id"></param>
+            <returns>A certain instance of location</returns>
+            <response code="200">Gets a location by identifier.</response>
+            <response code="404">If the location was not found.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.LocationController.Add(RentACar.WebApi.ViewModels.Location.AddLocationModel)">
+            <summary>
+            Create a location and adds it to the database
+            </summary>
+            <param name="addLocationModel"></param>
+            <returns>The new created location</returns>
+            <response code="200">Gets the created location</response>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.OrderController">
+            <summary>
+            All order methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.OrderController.All">
+            <summary>
+            Gets all orders from the database
+            </summary>
+            <returns>A list of all orders</returns>
+            <response code="200">Gets all orders.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.OrderController.GetById(System.Int32)">
+            <summary>
+            Gets a certain order by id
+            </summary>
+            <param name="id"></param>
+            <returns>A certain instance of order</returns>
+            <response code="200">Gets an order by identifier.</response>
+            <response code="404">If the order was not found.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.OrderController.GetAllBookingsByRenter(System.Int32)">
+            <summary>
+            Get all orders by renterId from the database
+            </summary>
+            <param name="renterId"></param>
+            <returns>A list of all orders by renterId</returns>
+            <response code="200">Gets all oders by identifier.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.OrderController.Add(RentACar.WebApi.ViewModels.Order.AddOrderModel)">
+            <summary>
+            Create a order and adds it to the database
+            </summary>
+            <param name="addOrderDto"></param>
+            <returns>The new created order</returns>
+            <response code="200">Gets the created order</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.OrderController.Delete(System.Int32)">
+            <summary>
+            Marks the entity as deleted but it doesn't really 
+            removes it from the database / soft delete
+            </summary>
+            <param name="id"></param>
+            <returns>No content</returns>
+            <response code="204">No content</response>
+            <response code="404">If the order was not found.</response>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.RatingController">
+            <summary>
+            All rating methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.RatingController.GetByCarId(System.Int32)">
+            <summary>
+            Gets all ratings about a certain car by carId
+            </summary>
+            <param name="carId"></param>
+            <returns>A list of all ratings</returns>
+            <response code="200">Gets all ratings by identifier.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.RatingController.GetById(System.Int32)">
+            <summary>
+            Gets rating by id
+            </summary>
+            <param name="id"></param>
+            <returns>Gets a certain instance of a rating</returns>
+            <response code="200">Gets a rating by identifier.</response>
+            <response code="404">If the rating was not found.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.RatingController.GetById(System.Int32,System.Int32)">
+            <summary>
+            Get a rating by carId and by renterId
+            </summary>
+            <param name="carId"></param>
+            <param name="renterId"></param>
+            <returns>Gets a certain instance of a rating</returns>
+            <response code="200">Gets a rating by two identifier.</response>
+            <response code="404">If the rating was not found.</response>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.RatingController.Add(RentACar.WebApi.ViewModels.Rating.GiveRatingModel)">
+            <summary>
+            Create a rating and adds it to the database
+            </summary>
+            <param name="giveRatingDto"></param>
+            <returns>The new created object</returns> 
+            <response code="200">Gets the created rating</response>
+        </member>
+        <member name="T:RentACar.WebApi.Controllers.RenterController">
+            <summary>
+            All renter methods
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Controllers.RenterController.GetById(System.Int32)">
+            <summary>
+            Gets a certain renter by id
+            </summary>
+            <param name="id"></param>
+            <returns>Gets a certain instance of a renter</returns>
+            <response code="200">Gets a renter by identifier.</response>
+            <response code="404">If the renter was not found.</response>
+        </member>
+        <member name="T:RentACar.WebApi.Middleware.ExceptionMiddleware">
+            <summary>
+            Exception handler for the whole application.
+            </summary>
+        </member>
+        <member name="M:RentACar.WebApi.Middleware.ExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RentACar.WebApi.Middleware.ExceptionMiddleware"/> class.
+            </summary>
+            <param name="next">delegate.</param>
+        </member>
+        <member name="M:RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Loggs error and returns appropriate response.
+            </summary>
+            <param name="context">The Http Context object.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:RentACar.WebApi.ViewModels.Rating.GetRatingViewModel">
+            <summary>
+            View Model for a ratig / DTO
+            </summary>
+        </member>
+        <member name="T:RentACar.WebApi.ViewModels.Rating.GiveRatingModel">
+            <summary>
+            View model for goving a rating / DTO
+            </summary>
+        </member>
+        <member name="T:RentACar.Api.Logger.Log">
+            <summary>
+            Custom logger
+            </summary>
+        </member>
+        <member name="P:RentACar.Api.Logger.Log.Instance">
+            <summary>
+            Creates a new instance of logger as Singleton 
+            </summary>
+        </member>
+        <member name="M:RentACar.Api.Logger.Log.LogException(System.String)">
+            <summary>
+            Logs exceptions messages in a file
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:RentACar.Api.Logger.Log.LogWarning(System.String)">
+            <summary>
+            Log warnings messages in a file
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:RentACar.Api.Logger.Log.LogInformation(System.String)">
+            <summary>
+            Log information messages in a file
+            </summary>
+            <param name="message"></param>
+        </member>
+    </members>
+</doc>

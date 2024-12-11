@@ -1,0 +1,6 @@
+{
+  "RentACar.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\SoftUni\\source\\AmdarisProject\\RentACar\\RentACar\\RentACar.Core",
+  "RentACar.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\SoftUni\\source\\AmdarisProject\\RentACar\\RentACar\\RentACar.Domain",
+  "RentACar.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\SoftUni\\source\\AmdarisProject\\RentACar\\RentACar\\RentACar.Infrastructure",
+  "RentACar.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\SoftUni\\source\\AmdarisProject\\RentACar\\RentACar\\RentACar.WebApi"
+}

@@ -1,0 +1,884 @@
+------------------------------------------------
+19.1.2023 г. 09:52:28 ч.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'applicationUser' with type 'RentACar.Domain.Entitites.Identity.ApplicationUser'. Path 'dealer'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 10:00:36 ч.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'renter' with type 'RentACar.Domain.Entitites.Renter'. Path 'applicationUser'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 10:02:50 ч.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'applicationUser' with type 'RentACar.Domain.Entitites.Identity.ApplicationUser'. Path 'renter'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 15:49:44 ч.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Azure.Storage.StorageConnectionString.Parse(String connectionString)
+   at Azure.Storage.Blobs.BlobServiceClient..ctor(String connectionString, BlobClientOptions options)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IServiceProvider _)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context)
+------------------------------------------------
+19.1.2023 г. 15:59:14 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:98a9b6c1-d01e-0017-2c0e-2c9f8a000000
+Time:2023-01-19T13:59:13.5231323Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:98a9b6c1-d01e-0017-2c0e-2c9f8a000000
+Time:2023-01-19T13:59:13.5231323Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 98a9b6c1-d01e-0017-2c0e-2c9f8a000000
+x-ms-client-request-id: c35fb06b-1407-4fff-9a18-0294b6b6eb8a
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 13:59:13 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 15:59:43 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:98a9fd4a-d01e-0017-140e-2c9f8a000000
+Time:2023-01-19T13:59:41.9649886Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:98a9fd4a-d01e-0017-140e-2c9f8a000000
+Time:2023-01-19T13:59:41.9649886Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 98a9fd4a-d01e-0017-140e-2c9f8a000000
+x-ms-client-request-id: 4a9c4951-2251-4ca4-85fe-53cb5b503608
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 13:59:41 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:00:54 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:9ff31eff-f01e-0062-340e-2cf4a6000000
+Time:2023-01-19T14:00:52.8319261Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:9ff31eff-f01e-0062-340e-2cf4a6000000
+Time:2023-01-19T14:00:52.8319261Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 9ff31eff-f01e-0062-340e-2cf4a6000000
+x-ms-client-request-id: 9c32f9ef-2315-466d-8947-6e370071cc1e
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:00:52 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:01:22 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:9ff36b3c-f01e-0062-1f0e-2cf4a6000000
+Time:2023-01-19T14:01:21.3407391Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:9ff36b3c-f01e-0062-1f0e-2cf4a6000000
+Time:2023-01-19T14:01:21.3407391Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 9ff36b3c-f01e-0062-1f0e-2cf4a6000000
+x-ms-client-request-id: 0d76222a-2509-4bf5-b852-f0033e76b6cd
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:01:20 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:03:25 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:f5622b50-201e-0061-4a0e-2c15c2000000
+Time:2023-01-19T14:03:24.7608257Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:f5622b50-201e-0061-4a0e-2c15c2000000
+Time:2023-01-19T14:03:24.7608257Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: f5622b50-201e-0061-4a0e-2c15c2000000
+x-ms-client-request-id: 8222df42-a705-474a-af9c-3023633abbd9
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:03:24 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:05:28 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:075abd4f-601e-0002-7b0f-2c8839000000
+Time:2023-01-19T14:05:27.1591807Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:075abd4f-601e-0002-7b0f-2c8839000000
+Time:2023-01-19T14:05:27.1591807Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 075abd4f-601e-0002-7b0f-2c8839000000
+x-ms-client-request-id: 3be9a05b-04a7-4107-b452-0b3e470e20b8
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:05:26 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:07:21 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:7ae05e17-e01e-006e-670f-2c63ae000000
+Time:2023-01-19T14:07:19.8656847Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:7ae05e17-e01e-006e-670f-2c63ae000000
+Time:2023-01-19T14:07:19.8656847Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 7ae05e17-e01e-006e-670f-2c63ae000000
+x-ms-client-request-id: e562d622-fe4c-4e19-bf13-6e80f3fdf0c3
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:07:19 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:08:40 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:3f2282ec-301e-0020-0d0f-2c4d26000000
+Time:2023-01-19T14:08:38.6149624Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:3f2282ec-301e-0020-0d0f-2c4d26000000
+Time:2023-01-19T14:08:38.6149624Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 3f2282ec-301e-0020-0d0f-2c4d26000000
+x-ms-client-request-id: 99a5e070-58a8-4228-9c0f-62a0e99442df
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:08:37 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:10:53 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:7dd25801-b01e-005c-590f-2c63d9000000
+Time:2023-01-19T14:10:51.9110305Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:7dd25801-b01e-005c-590f-2c63d9000000
+Time:2023-01-19T14:10:51.9110305Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 7dd25801-b01e-005c-590f-2c63d9000000
+x-ms-client-request-id: e035ded0-032e-4adf-8104-e480ab4fea2c
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:10:51 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:13:18 ч.
+Azure.RequestFailedException: The specifed resource name contains invalid characters.
+RequestId:831b4679-401e-0015-2410-2c2132000000
+Time:2023-01-19T14:13:16.9894043Z
+Status: 400 (The specifed resource name contains invalid characters.)
+ErrorCode: InvalidResourceName
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidResourceName</Code><Message>The specifed resource name contains invalid characters.
+RequestId:831b4679-401e-0015-2410-2c2132000000
+Time:2023-01-19T14:13:16.9894043Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 831b4679-401e-0015-2410-2c2132000000
+x-ms-client-request-id: adf02523-f2d1-4ba3-be0f-0d1bd60708e7
+x-ms-version: 2021-10-04
+x-ms-error-code: InvalidResourceName
+Date: Thu, 19 Jan 2023 14:13:16 GMT
+Content-Length: 243
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 42
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:18:00 ч.
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:5cabcdd0-701e-0021-7010-2c12fa000000
+Time:2023-01-19T14:17:59.3920961Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:5cabcdd0-701e-0021-7010-2c12fa000000
+Time:2023-01-19T14:17:59.3920961Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 5cabcdd0-701e-0021-7010-2c12fa000000
+x-ms-client-request-id: 307c3da5-7881-4e2e-91d9-c94aca4f2998
+x-ms-version: 2021-10-04
+x-ms-error-code: BlobNotFound
+Date: Thu, 19 Jan 2023 14:17:58 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName)
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:18:11 ч.
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:5cabea77-701e-0021-3210-2c12fa000000
+Time:2023-01-19T14:18:10.6846286Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:5cabea77-701e-0021-3210-2c12fa000000
+Time:2023-01-19T14:18:10.6846286Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 5cabea77-701e-0021-3210-2c12fa000000
+x-ms-client-request-id: 2e58eaec-d5c2-4d72-a1da-38ca1434beef
+x-ms-version: 2021-10-04
+x-ms-error-code: BlobNotFound
+Date: Thu, 19 Jan 2023 14:18:09 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName)
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:20:04 ч.
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:09766138-901e-0029-4d11-2c08f5000000
+Time:2023-01-19T14:20:02.9385673Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:09766138-901e-0029-4d11-2c08f5000000
+Time:2023-01-19T14:20:02.9385673Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 09766138-901e-0029-4d11-2c08f5000000
+x-ms-client-request-id: 724e2135-4f7c-467a-862f-ff18dd3b92cf
+x-ms-version: 2021-10-04
+x-ms-error-code: BlobNotFound
+Date: Thu, 19 Jan 2023 14:20:02 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 43
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:23:18 ч.
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:1b2bd786-501e-0009-0e11-2c7352000000
+Time:2023-01-19T14:23:17.3125299Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:1b2bd786-501e-0009-0e11-2c7352000000
+Time:2023-01-19T14:23:17.3125299Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 1b2bd786-501e-0009-0e11-2c7352000000
+x-ms-client-request-id: 47967282-452f-40e8-8655-480f140e687c
+x-ms-version: 2021-10-04
+x-ms-error-code: BlobNotFound
+Date: Thu, 19 Jan 2023 14:23:17 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 43
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:25:01 ч.
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:c6db479b-601e-004f-4e11-2c47d5000000
+Time:2023-01-19T14:25:00.1581874Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:c6db479b-601e-004f-4e11-2c47d5000000
+Time:2023-01-19T14:25:00.1581874Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: c6db479b-601e-004f-4e11-2c47d5000000
+x-ms-client-request-id: 9aac4d19-3ae2-4c51-aa57-4339005a9528
+x-ms-version: 2021-10-04
+x-ms-error-code: BlobNotFound
+Date: Thu, 19 Jan 2023 14:24:59 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 43
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 16:31:20 ч.
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:e554e73c-501e-0036-4212-2cbbf1000000
+Time:2023-01-19T14:31:18.8063494Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:e554e73c-501e-0036-4212-2cbbf1000000
+Time:2023-01-19T14:31:18.8063494Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: e554e73c-501e-0036-4212-2cbbf1000000
+x-ms-client-request-id: ea2cf867-832a-4a34-9fd4-39d0a2269fd2
+x-ms-version: 2021-10-04
+x-ms-error-code: BlobNotFound
+Date: Thu, 19 Jan 2023 14:31:18 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 43
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36
+------------------------------------------------
+19.1.2023 г. 17:42:06 ч.
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:e79d697e-a01e-0032-481c-2c36f6000000
+Time:2023-01-19T15:42:05.1661873Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:e79d697e-a01e-0032-481c-2c36f6000000
+Time:2023-01-19T15:42:05.1661873Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: e79d697e-a01e-0032-481c-2c36f6000000
+x-ms-client-request-id: b99e5d60-fb4f-4e2c-b678-dbe1a90982e7
+x-ms-version: 2021-10-04
+x-ms-error-code: BlobNotFound
+Date: Thu, 19 Jan 2023 15:42:04 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions validationOptions, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingDirect(HttpRange range, BlobRequestConditions conditions, DownloadTransferValidationOptions transferValidationOverride, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync(CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadAsync()
+   at RentACar.Application.Services.StorageService.Get(String imageName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.Core\Services\StorageService.cs:line 43
+   at RentACar.WebApi.Controllers.BlobStorageController.Get(String fileName) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Controllers\BlobStorageController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at RentACar.WebApi.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\SoftUni\source\AmdarisProject\RentACar\RentACar\RentACar.WebApi\Middleware\ExceptionMiddleware.cs:line 36

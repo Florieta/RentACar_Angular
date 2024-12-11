@@ -1,5 +1,5 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { UserService } from '../../user/user.service';
 import { isPlatformBrowser } from '@angular/common';
 
@@ -15,7 +15,7 @@ export class NavigationComponent {
   isDealer: boolean = false;
   isRenter: boolean = false;
 
-  constructor(private userService: UserService, @Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(private userService: UserService, @Inject(PLATFORM_ID) private platformId: Object, private router: Router) {
 
     if (isPlatformBrowser(this.platformId)) {
       const user = localStorage.getItem('user');
@@ -42,7 +42,7 @@ export class NavigationComponent {
   }
   logout(): void {
     this.userService.logout().subscribe(() => {
-      console.log('Logged out successfully');
+      this.router.navigate(['/home']);
     });
   }
 }

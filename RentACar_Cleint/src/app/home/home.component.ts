@@ -29,10 +29,9 @@ export class HomeComponent {
   isLogged: boolean = false;
 
   images: string[] = [
-    '/assets/cars/1.webp',
     '/assets/cars/2.png',
     '/assets/cars/Citroen-C4-3.jpg',
-    '/assets/cars/ToyotaAuris.png'
+    '/assets/cars/1.webp',
   ];
 
   currentSlide: number = 0;
