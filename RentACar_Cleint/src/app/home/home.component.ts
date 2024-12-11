@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { BackgroundImageDirective } from '../directives/background-image.directive';
 import { UserService } from '../user/user.service';
