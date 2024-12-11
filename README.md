@@ -5,7 +5,7 @@
 The application is designed for two types of users: Dealers and Renters. It is built with a custom server developed in .NET/C#, and the front-end is powered by Angular. The app interacts with a SQL Server database and utilizes Azure Blob Storage for storing car images.
 
 # User Types
-Dealer:
+- Dealer:
 
 Username: User123
 Password: User123!
@@ -18,7 +18,7 @@ View and manage a list of their cars.
 Edit their profile information.
 Logout.
 
-Renter:
+- Renter:
 
 Username: Renter
 Password: User123!
@@ -41,23 +41,23 @@ Login and Registration: Pages to log in or register as a Dealer or a Renter.
 
 # Private Pages (Accessed after authentication):
 
-For Dealers:
+- For Dealers:
 
 Add Car: Dealers can add new cars to the catalog by filling in the car details (name, category, description, image, etc.).
 My Cars: Dealers can view all cars they have added to the platform. They can manage or remove them if necessary.
 My Profile: Dealers can view and edit their personal details (name, contact, etc.) through an edit option.
 
-For Renters:
+- For Renters:
 
 My Bookings: Renters can view a list of all their car bookings, along with the booking status and details.
 My Profile: Renters can view and edit their personal details.
 
-Search and Pagination:
+- Search and Pagination:
 Catalog Page: The catalog allows users to search for cars based on name, category, and other relevant criteria. Pagination is implemented to help navigate through multiple pages of cars efficiently.
 
 Car Details: Each car in the catalog has a "See Details" button that displays a detailed view of the car. Renters can click the "Book Now" button if they wish to rent that car.
 
-Authentication and Navigation:
+- Authentication and Navigation:
 Login: Users can log in with their credentials to access their personalized dashboard. Dealers and Renters have different navigation options based on their roles.
 Logout: Both users can log out using a logout button in the navigation.
 
