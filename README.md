@@ -63,11 +63,11 @@ Logout: Both users can log out using a logout button in the navigation.
 
 # Flow of the Application:
 
-Unauthenticated Users:
+- Unauthenticated Users:
 
 Visitors can browse the Home, Catalog, and Car Details pages. They can register either as a Dealer or a Renter through the login/register options.
 
-Authenticated Dealers:
+- Authenticated Dealers:
 
 Once logged in, Dealers have additional options:
 Add Car: Add a new car to the platform.
@@ -75,15 +75,18 @@ My Cars: View all cars they have added and manage them.
 My Profile: View and update their personal details.
 Logout: To sign out from the system.
 
-Authenticated Renters:
+- Authenticated Renters:
 
 Renters can:
 My Bookings: View and manage their bookings.
 My Profile: Edit their personal details.
+Book Now: Renters can click the "Book Now" button on the car details page to initiate a car booking.
 Logout: To sign out from the system.
 
 # Additional Features:
 
-Pagination: The catalog page is paginated to manage a large number of cars, making navigation smoother and more efficient.
-Book Now: Renters can click the "Book Now" button on the car details page to initiate a car booking.
-Validation: All forms have validation.
+- Pagination: The catalog page is paginated to manage a large number of cars, making navigation smoother and more efficient.
+- Search: Option to search for cars based on name, category, and other relevant criteria on Catalog page. 
+- Validation: All forms have validation.
+- Angular animation: Add slider photos on Home page.
+- Unit tests
