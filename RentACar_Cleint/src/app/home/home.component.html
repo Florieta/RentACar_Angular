@@ -1,35 +1,46 @@
 <section class="home-layout">
   <div class="background-image" appBackgroundImage="'/assets/cars/1111.jpg'"></div>
-    <div class="content">
-      <h1>Upgrade your Travel</h1>
-      <p>Enjoy secret offers up to -70% off the best cars every Sunday.</p>
-      @if(isLogged){
-        <h2>Welcome back!</h2>
-        <p>Your next adventure awaits. Explore our exclusive deals and enjoy the best prices.</p>
-      }@else {
-        <button class="register-button" (click)="onRegister()">Register</button>
-        <p class="subtext">Discover the experience</p>
-      }
+  <div class="content">
+    <h1>Upgrade your Travel</h1>
+    <p>Enjoy secret offers up to -70% off the best cars every Sunday.</p>
+    @if(isLogged){
+    <h2>Welcome back!</h2>
+    <p>Your next adventure awaits. Explore our exclusive deals and enjoy the best prices.</p>
+    }@else {
+    <button class="register-button" (click)="onRegister()">Register</button>
+    <p class="subtext">Discover the experience</p>
+    }
+  </div>
+</section>
+
+<section class="image-slider">
+  <div class="slider-container">
+    <div class="slider" [@slideAnimation]="currentSlide">
+      <img [src]="images[currentSlide]" alt="Car Image" loading="lazy" />
     </div>
-  </section>
-  
-  <section class="product-values">
-    <h2>How it Works</h2>
-    <div class="values-container">
-      <div class="value-item">
-        <img src="/assets/book.png" alt="Book" />
-        <h3>1. Make a free reservation</h3>
-        <p>No money in advance.</p>
-      </div>
-      <div class="value-item">
-        <img src="/assets/attention.png" alt="Attention" />
-        <h3>2. First come, first served</h3>
-        <p>Be quick, our offers are limited.</p>
-      </div>
-      <div class="value-item">
-        <img src="/assets/offers.png" alt="Offers" />
-        <h3>3. New offers every week</h3>
-        <p>Your Sundays will no longer be alike.</p>
-      </div>
+  </div>
+
+  <button class="prev-btn" (click)="prevSlide()">&#10094;</button>
+  <button class="next-btn" (click)="nextSlide()">&#10095;</button>
+</section>
+
+<section class="product-values">
+  <h2>How it Works</h2>
+  <div class="values-container">
+    <div class="value-item">
+      <img src="/assets/book.png" alt="Book" />
+      <h3>1. Make a free reservation</h3>
+      <p>No money in advance.</p>
     </div>
-  </section>
+    <div class="value-item">
+      <img src="/assets/attention.png" alt="Attention" />
+      <h3>2. First come, first served</h3>
+      <p>Be quick, our offers are limited.</p>
+    </div>
+    <div class="value-item">
+      <img src="/assets/offers.png" alt="Offers" />
+      <h3>3. New offers every week</h3>
+      <p>Your Sundays will no longer be alike.</p>
+    </div>
+  </div>
+</section>

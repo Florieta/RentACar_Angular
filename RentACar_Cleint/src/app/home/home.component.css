@@ -183,3 +183,69 @@
       font-size: 14px;
       opacity: 0.8;
     }
+
+    .image-slider {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      height: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    .slider-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider-item {
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .slider-item img {
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      top: 50%; /* Center vertically */
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 2rem;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+      width: 50px; /* Fixed width for uniformity */
+      height: 50px; /* Fixed height for uniformity */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%; /* Circular buttons */
+    }
+    
+    .prev-btn {
+      left: 0; /* Align to the far left */
+    }
+    
+    .next-btn {
+      right: 0; /* Align to the far right */
+    }
+    
+    .prev-btn:hover,
+    .next-btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Optional: Add padding to prevent the buttons from overlapping with the slider */
+    .image-slider {
+      padding-left: 60px; /* Adjust for prev button */
+      padding-right: 60px; /* Adjust for next button */
+    }
