@@ -10,11 +10,14 @@ The application is designed for two types of users: Dealers and Renters. It is b
 Username: User123
 Password: User123!
 
-Role: Dealers can manage the cars they add to the platform. They can add new cars, view a list of cars they have added, and manage their profile information.
+Role: Dealers can manage the cars they add to the platform. They can add new cars, edit and delete them, view a list of cars they have added, and manage their profile information.
 
 Features:
+Search and filter cars by name, category, and other attributes.
+View detailed information about each car.
 Add new cars to the catalog.
 View and manage a list of their cars.
+Edit and delete their own cars.
 Edit their profile information.
 Logout.
 
@@ -23,13 +26,14 @@ Logout.
 Username: Renter
 Password: User123!
 
-Role: Renters can browse cars available for rent, make bookings, and manage their personal details.
+Role: Renters can browse cars available for rent, make bookings, view their onw bookings and manage their personal details.
 
 Features:
 Search and filter cars by name, category, and other attributes.
 View detailed information about each car.
 Book cars they are interested in.
 View and manage their bookings.
+Cancel their own bookings if the start date is before today.
 Edit their profile information.
 Logout.
 
@@ -45,11 +49,12 @@ Login and Registration: Pages to log in or register as a Dealer or a Renter.
 
 Add Car: Dealers can add new cars to the catalog by filling in the car details (name, category, description, image, etc.).
 My Cars: Dealers can view all cars they have added to the platform. They can manage or remove them if necessary.
+Edir Car: Dealer can edit all cars they have added to the platform.
 My Profile: Dealers can view and edit their personal details (name, contact, etc.) through an edit option.
 
 - For Renters:
 
-My Bookings: Renters can view a list of all their car bookings, along with the booking status and details.
+My Bookings: Renters can view a list of all their car bookings, along with the booking status and details. They also can cancel a booking.
 My Profile: Renters can view and edit their personal details.
 
 - Search and Pagination:
