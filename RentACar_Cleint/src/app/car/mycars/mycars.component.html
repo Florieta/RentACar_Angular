@@ -3,6 +3,7 @@
 }
 @if(!isLoading && cars.length > 0){
   <div class="cars-list">
+    @if(!editingCar){
     <table>
       <thead>
         <tr>
@@ -15,6 +16,8 @@
           <th>Transmission</th>
           <th>Seats</th>
           <th>Doors</th>
+          <th>Available</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -29,10 +32,24 @@
             <td>{{ car.transmission }}</td>
             <td>{{ car.seats }}</td>
             <td>{{ car.doors }}</td>
+            <td>{{ car.isAvailable ? 'Available' : 'Booked' }}</td> 
+            @if(car.isAvailable){
+              <td>
+                <button (click)="enableEdit(car)" class="btn btn-edit">Edit</button> 
+                <button (click)="deleteCar(car.id)" class="btn btn-delete">Delete</button> 
+              </td>
+            }
           </tr>
         }
       </tbody>
     </table>
+  }@else {
+    <app-edit-car 
+        [car]="editingCar" 
+        (save)="saveEdit($event)" 
+        (cancel)="cancelEdit()">
+    </app-edit-car>
+  }
   </div>
 }
   

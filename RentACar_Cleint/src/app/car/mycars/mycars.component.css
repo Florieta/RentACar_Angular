@@ -28,4 +28,42 @@
   th {
     font-weight: bold;
   }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 0 5px;
+    width: 80px; 
+    height: 30px; 
+    text-align: center; 
+    line-height: 1; 
+  }
+  
+  .btn-edit {
+    background-color: orange;
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: rgb(246, 183, 68);
+  }
+  
+  .btn-delete {
+    background-color: #b81210; 
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background-color: #f44336; 
+  }
+  
+  .btn:disabled {
+    background-color: #d3d3d3; 
+    cursor: not-allowed;
+  }
   

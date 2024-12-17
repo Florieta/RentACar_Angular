@@ -15,4 +15,5 @@ export interface Car {
   isAvailable: boolean;
   categoryName: string;
   categoryId: number;
+  dealerId: number | null;
   }

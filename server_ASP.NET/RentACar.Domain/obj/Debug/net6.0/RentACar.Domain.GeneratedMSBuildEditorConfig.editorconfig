@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RentACar.Domain
-build_property.ProjectDir = D:\SoftUni\RentACar_Angular\server_ASP.NET\RentACar.Domain\
+build_property.ProjectDir = d:\SoftUni\RentACar_Angular\server_ASP.NET\RentACar.Domain\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

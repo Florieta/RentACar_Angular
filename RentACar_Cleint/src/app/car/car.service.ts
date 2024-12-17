@@ -41,4 +41,12 @@ export class CarService {
   getCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(`${this.apiUrl}/Category`);
   }
+
+  deleteCar(carId: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/Car/${carId}`);
+  }
+
+  editCar(carData: CarForm): Observable<any> {
+    return this.http.put<Car>(`${this.apiUrl}/Car`, carData);
+  }
 }

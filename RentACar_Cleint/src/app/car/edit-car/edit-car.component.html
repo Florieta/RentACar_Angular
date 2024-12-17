@@ -1,0 +1,105 @@
+<div class="container">
+    <h2>Edit Car</h2>
+    @if(car !== null){
+    <form #carForm="ngForm" (ngSubmit)="onSave()">
+        <div class="form-group">
+            <label for="make">Make</label>
+            <input type="text" id="make" class="form-control" [(ngModel)]="car.make" name="make" required minlength="2"
+                maxlength="20" />
+        </div>
+
+        <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" id="model" class="form-control" [(ngModel)]="car.model" name="model" required
+                minlength="2" maxlength="20" />
+        </div>
+
+        <div class="form-group">
+            <label for="regNumber">Registration Number</label>
+            <input type="text" id="regNumber" class="form-control" [(ngModel)]="car.regNumber" name="regNumber" required
+                minlength="5" maxlength="10" />
+        </div>
+
+        <div class="form-group">
+            <label for="makeYear">Make Year</label>
+            <input type="number" id="makeYear" class="form-control" [(ngModel)]="car.makeYear" name="makeYear" required
+                min="1886" />
+        </div>
+
+        <div class="form-group">
+            <label for="seats">Seats</label>
+            <input type="number" id="seats" class="form-control" [(ngModel)]="car.seats" name="seats" required />
+        </div>
+
+        <div class="form-group">
+            <label for="doors">Doors</label>
+            <input type="number" id="doors" class="form-control" [(ngModel)]="car.doors" name="doors" required />
+        </div>
+
+        <div class="form-group">
+            <label for="fuel">Fuel</label>
+            <select id="fuel" class="form-control" [(ngModel)]="car.fuel" name="fuel" required>
+                <option value="Diesel">Diesel</option>
+                <option value="Petrol">Petrol</option>
+                <option value="LPG">LPG</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Electric">Electric</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="transmission">Transmission</label>
+            <select id="transmission" class="form-control" [(ngModel)]="car.transmission" name="transmission" required>
+                <option value="Automatic">Automatic</option>
+                <option value="Manual">Manual</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="airCondition">Air Conditioning</label>
+            <input type="checkbox" id="airCondition" [(ngModel)]="car.airCondition" name="airCondition" />
+        </div>
+
+        <div class="form-group">
+            <label for="navigationSystem">Navigation System</label>
+            <input type="checkbox" id="navigationSystem" [(ngModel)]="car.navigationSystem" name="navigationSystem" />
+        </div>
+
+        <div class="form-group">
+            <label for="dailyRate">Daily Rate</label>
+            <input type="number" id="dailyRate" class="form-control" [(ngModel)]="car.dailyRate" name="dailyRate"
+                required />
+        </div>
+
+        <div class="form-group">
+            <label for="categoryId">Category</label>
+            <select
+              id="categoryId"
+              class="form-control"
+              [(ngModel)]="car.categoryId"
+              name="categoryId"
+              required
+            >
+              @for (category of categories; track $index) {
+              <option [value]="category.id">
+                {{ category.categoryName }}
+              </option>
+            }
+            </select>
+          </div>
+
+        <div class="form-actions">
+            <button type="submit" class="form-button save-button" [disabled]="carForm.invalid || isSaving">
+                @if(!isSaving){
+                    <span >Save</span>
+                }@else {
+                    <span>Saving...</span>
+                }
+            </button>
+            <button type="button" class="form-button cancel-button" (click)="onCancel()" [disabled]="isSaving">
+                Cancel
+            </button>
+        </div>
+    </form>
+    }
+</div>
