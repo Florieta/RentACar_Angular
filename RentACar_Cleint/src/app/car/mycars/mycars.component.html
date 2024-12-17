@@ -1,8 +1,8 @@
-@if(isLoading){
-  <app-loader />
-}
 @if(!isLoading && cars.length > 0){
   <div class="cars-list">
+    @if(isLoading){
+      <app-loader />
+    }
     @if(!editingCar){
     <table>
       <thead>
