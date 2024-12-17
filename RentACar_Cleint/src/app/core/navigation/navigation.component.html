@@ -8,21 +8,8 @@
         <li><a routerLink="/catalog">Catalog</a></li>
         @if (!isLogged){
           <li><a routerLink="/login">Login</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle">Register</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a routerLink="/register/dealer"
-                  >Register as Dealer</a
-                >
-              </li>
-              <li>
-                <a routerLink="/register/renter"
-                  >Register as Renter</a
-                >
-              </li>
-            </ul>
-          </li>
+          <li><a routerLink="/register/dealer">Register Dealer</a></li>
+          <li><a routerLink="/register/renter">Register Renter</a></li>
         }
         @if (isLogged) {
           @if(isDealer){
